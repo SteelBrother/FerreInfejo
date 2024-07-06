@@ -1,3 +1,7 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+
+
+
 @layer reset {
 
     *,
@@ -200,7 +204,6 @@ figcaption, figure, main {
         z-index: 2;
         color: white;
         font: 400 8cqi / normal system-ui, sans-serif;
-        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)); 
     }
 }
 
@@ -217,7 +220,6 @@ figcaption, figure, main {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 20px;
-   
   }
   
   @media (max-width: 768px) {

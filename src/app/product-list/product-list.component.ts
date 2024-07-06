@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Category } from '../models/category.model';
 import { ProductService } from '../services/product.service';
 import { Product } from '../models/product.model';
 
@@ -9,17 +10,16 @@ import { Product } from '../models/product.model';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
+  categories: Category[] = [];
   products: Product[] = [];
   filteredProducts: Product[] = [];
-  categories: string[] = [];
 
   constructor(private productService: ProductService, private router: Router) {}
 
   ngOnInit() {
-    console.log('Iniciolis');
     this.products = this.productService.getProducts();
     this.filteredProducts = this.products;
-    this.categories = this.productService.getCategories();
+    this.categories = this.productService.getAllCategories();
   }
 
   filterProducts(category: string) {

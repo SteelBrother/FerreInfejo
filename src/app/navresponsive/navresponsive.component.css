@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 
+
 /* Resto de tus estilos */
 
 /*=============== BASE ===============*/
@@ -32,9 +33,11 @@ a {
   margin-inline: 1.5rem;
 }
 
+
+
 /*=============== HEADER ===============*/
 .header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;

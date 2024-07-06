@@ -2,7 +2,25 @@
     <div class="ar-nav-actions">
     </div>
   </nav>
+  
   <div class="best-sellers-container">
+    <h1 class="best-sellers-title">Categorias Destacadas</h1>
+    <section class="ar-section">
+      <div class="ar-cards">
+        <a *ngFor="let categoria of categories"
+           [class]="'ar-card ' + categoria.clasecss"
+           (click)="navigateToCategoria(categoria.nombre)">
+          <figure class="ar-visual">
+            <img class="ar-card-img" [src]="categoria.img"/>
+            <figcaption class="ar-figcaption">{{ categoria.titulo }}</figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+  </div>
+  
+  
+  <!-- <div class="best-sellers-container">
     <h1 class="best-sellers-title">Categorias Destacadas</h1>
   <section class="ar-section">
     <div class="ar-cards">
@@ -10,32 +28,20 @@
             <figure class="ar-visual">
                 <img
                     class="ar-card-img"
-                    src="assets/imagenes/catdes_1s_b.jpg"
+                    src="assets/imagenes/catdes_1i_b.jpg"
                     alt="Person with a game controller in hand"
                 />
-                <figcaption class="ar-figcaption"> Ferretería General </figcaption>
+                <figcaption class="ar-figcaption">Pinturas y Acabados</figcaption>
             </figure>
         </a>
         <a href="#" class="ar-card ar-card-2">
             <figure class="ar-visual">
                 <img
                     class="ar-card-img"
-                    src="assets/imagenes/catdes_1i_b.jpg"
+                    src="assets/imagenes/catdes_1s_b.jpg"
                     alt="Person with curly hair in neon lighting"
                 />
-                <figcaption class="ar-figcaption">Sellos Mecánicos</figcaption>
-            </figure>
-        </a>
-      
-       
-        <a href="#" class="ar-card ar-card-4">
-            <figure class="ar-visual">
-                <img
-                    class="ar-card-img"
-                    src="assets/imagenes/catdes_2s_b.jpg"
-                    alt="Person wearing a virtual reality headset in a blue-lit room"
-                />
-                <figcaption class="ar-figcaption">Rodamientos</figcaption>
+                <figcaption class="ar-figcaption">Herramientas Manuales</figcaption>
             </figure>
         </a>
         <a href="#" class="ar-card ar-card-3">
@@ -48,7 +54,17 @@
                 <figcaption class="ar-figcaption">Equipos de Protección</figcaption>
             </figure>
         </a>
+        <a href="#" class="ar-card ar-card-4">
+            <figure class="ar-visual">
+                <img
+                    class="ar-card-img"
+                    src="assets/imagenes/catdes_2s_b.jpg"
+                    alt="Person wearing a virtual reality headset in a blue-lit room"
+                />
+                <figcaption class="ar-figcaption">Materiales de Construcción</figcaption>
+            </figure>
+        </a>
     </div>
   </section>
 </div>
-  
+   -->

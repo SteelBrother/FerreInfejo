@@ -24,10 +24,11 @@ import { FormasPagoComponent } from './formas-pago/formas-pago.component';
 import { PagProductosComponent } from './pag-productos/pag-productos.component';
 import { FormsModule } from '@angular/forms';
 import { NavresponsiveComponent } from './navresponsive/navresponsive.component';
+import { PagproductosComponent } from './pagproductos/pagproductos.component';
 @NgModule({
   declarations: [
     AppComponent,    
-    ListaProductosComponent, MenuHeaderComponent, ProductoComponent, NavComponent, OtrosProductosComponent, ProductosDestacadosComponent, ProveedoresCategComponent, BtnwaComponent, FooterComponent, ContactoComponent, ProductListComponent, ProductDetailComponent, InicioComponent, ProductosdescuentoComponent, HeaderComponent, ContactImgComponent, FormasPagoComponent, PagProductosComponent, NavresponsiveComponent
+    ListaProductosComponent, MenuHeaderComponent, ProductoComponent, NavComponent, OtrosProductosComponent, ProductosDestacadosComponent, ProveedoresCategComponent, BtnwaComponent, FooterComponent, ContactoComponent, ProductListComponent, ProductDetailComponent, InicioComponent, ProductosdescuentoComponent, HeaderComponent, ContactImgComponent, FormasPagoComponent, PagProductosComponent, NavresponsiveComponent, PagproductosComponent
   ],
   imports: [
     BrowserModule,

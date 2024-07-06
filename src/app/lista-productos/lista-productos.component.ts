@@ -17,12 +17,32 @@ export class ListaProductosComponent implements OnInit {
 
   ngOnInit(): void {
     this.products = this.productService.getProducts();
-    this.filteredProducts = [...this.products]; // Inicializar con todos los productos al principio
+    
+    // this.filteredProducts = [...this.products]; 
+    this.filteredProducts = this.getRandomProducts();
+  }
+
+  getRandomProducts(): any[] {
+
+    function shuffle(array: any[]): void {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    const shuffledProducts = [...this.products]; 
+    shuffle(shuffledProducts); 
+    return shuffledProducts.slice(0, 12);
+  }
+
+  loadMoreProducts() {
+    this.router.navigate(['/listadoproductos']);
   }
 
   filterProducts(category: string) {
     if (category === 'all') {
-      this.filteredProducts = [...this.products]; // Mostrar todos los productos
+      this.filteredProducts = this.getRandomProducts(); // Mostrar todos los productos
     } else {
       this.filteredProducts = this.products.filter(p => p.category === category);
     }
