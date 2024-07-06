@@ -21,14 +21,13 @@ import { ProductosdescuentoComponent } from './productosdescuento/productosdescu
 import { HeaderComponent } from './header/header.component';
 import { ContactImgComponent } from './contact-img/contact-img.component';
 import { FormasPagoComponent } from './formas-pago/formas-pago.component';
-import { PagProductosComponent } from './pag-productos/pag-productos.component';
 import { FormsModule } from '@angular/forms';
 import { NavresponsiveComponent } from './navresponsive/navresponsive.component';
 import { PagproductosComponent } from './pagproductos/pagproductos.component';
 @NgModule({
   declarations: [
     AppComponent,    
-    ListaProductosComponent, MenuHeaderComponent, ProductoComponent, NavComponent, OtrosProductosComponent, ProductosDestacadosComponent, ProveedoresCategComponent, BtnwaComponent, FooterComponent, ContactoComponent, ProductListComponent, ProductDetailComponent, InicioComponent, ProductosdescuentoComponent, HeaderComponent, ContactImgComponent, FormasPagoComponent, PagProductosComponent, NavresponsiveComponent, PagproductosComponent
+    ListaProductosComponent, MenuHeaderComponent, ProductoComponent, NavComponent, OtrosProductosComponent, ProductosDestacadosComponent, ProveedoresCategComponent, BtnwaComponent, FooterComponent, ContactoComponent, ProductListComponent, ProductDetailComponent, InicioComponent, ProductosdescuentoComponent, HeaderComponent, ContactImgComponent, FormasPagoComponent, NavresponsiveComponent, PagproductosComponent
   ],
   imports: [
     BrowserModule,
