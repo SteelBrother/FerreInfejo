@@ -1,0 +1,44 @@
+<div class="discount-products-container">
+    <h1 class="discount-title">Productos en Descuento</h1>
+    <div class="gallery">
+        <div *ngFor="let product of products">  
+            <a (click)="viewProduct(product.id)" class="product-link">
+                <div class="content">
+                    <div class="discount-badge">{{ product.porcentajedescuento }}% Dto</div>
+                    <img [src]="product.mainimage" alt="{{product.name}}">
+                    <h3>{{product.name}}</h3>
+                    <p>{{product.description}}</p>
+                    <div class="price">
+                        <h6 class="old-price">${{product.price}}</h6>
+                        <h6 class="new-price">${{product.pricedesc}}</h6>
+                    </div>
+                    <button class="buy-1">Detalles</button>
+                </div>  
+            </a>    
+        </div>
+    </div>
+</div>
+
+<div class="discount-products-container">
+    <h1 class="discount-title">Productos Mas Vendidos</h1>
+    <div class="gallery">
+        <div *ngFor="let product of productsDestacados">  
+            <a (click)="viewProduct(product.id)" class="product-link">
+                <div class="content">
+                    <img [src]="product.mainimage" alt="{{product.name}}">
+                    <h3>{{product.name}}</h3>
+                    <p>{{product.description}}</p>
+                    <h6>{{product.price}}</h6>
+                    <ul>
+                        <li><i class="fas fa-star checked"></i></li>
+                        <li><i class="fas fa-star checked"></i></li>
+                        <li><i class="fas fa-star checked"></i></li>
+                        <li><i class="fas fa-star checked"></i></li>
+                        <li><i class="fas fa-star checked"></i></li>
+                    </ul>
+                    <button class="buy-1">Detalles</button>
+                </div>
+            </a>      
+        </div>
+    </div>
+</div>

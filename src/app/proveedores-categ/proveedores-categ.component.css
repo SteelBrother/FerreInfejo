@@ -1,0 +1,236 @@
+@layer reset {
+
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+    }
+
+    :where(:not(dialog)) {
+        margin: 0;
+    }
+}
+
+@layer demo {
+    :root {
+        color-scheme: dark;
+        --ar-nav-block-size: 74px;
+    }
+}
+
+@layer components.navbar {
+    .ar-navbar {
+        background-color: black;
+        block-size: var(--ar-nav-block-size);
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        inset-block-start: 0;
+        justify-content: space-between;
+        padding-inline: 0.75rem;
+        place-items: center;
+        position: sticky;
+        z-index: 10;
+    }
+
+    .ar-nav-actions {
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        place-items: center;
+    }
+
+    .ar-nav-link {
+        color: white;
+        text-decoration: none;
+        font: 500 0.875rem/1.25rem system-ui, sans-serif;
+    }
+
+
+    .ar-search-wrap {
+        display: grid;
+        grid-auto-flow: column;
+        place-items: center;
+        gap: 0.25rem;
+    }
+
+
+
+    .ar-search-btn {
+        color: white;
+        inline-size: 1.5rem;
+        block-size: 1.5rem;
+        padding: 2px;
+        cursor: pointer;
+        background-color: inherit;
+        border: none;
+    }
+
+    .ar-search-input {
+        border: none;
+        background-color: inherit;
+        border-block-end: 1px solid currentColor;
+        color: white;
+        padding-block: 0.25rem;
+        min-inline-size: 5ch;
+        inline-size: 100%;
+        font: 500 0.875rem/1.25rem system-ui, sans-serif;
+
+        &::placeholder {
+            color: white;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .ar-cart {
+        display: grid;
+        grid-auto-flow: column;
+        place-items: center;
+        gap: 2px;
+    }
+
+    .ar-cart-icon-wrapper {
+        padding: 2px;
+        inline-size: 1.5rem;
+        block-size: 1.5rem;
+    }
+
+    .ar-nav-icon-svg {
+        block-size: auto;
+        display: block;
+        max-inline-size: 100%;
+    }
+}
+
+figcaption, figure, main {
+    display: inline-grid;
+}
+
+@layer components.collections {
+    .ar-section {
+        background-color: black;
+        display: grid;
+        inline-size: 100%;
+        min-block-size: max(600px, calc(100dvb - var(--ar-nav-block-size)));
+        padding-block-end: 0.75rem;
+        padding-block-start: 0.75rem;
+        padding-inline: 0.75rem;
+        place-items: center;
+        position: relative;
+    }
+
+    .ar-cards {
+        background-color: black;
+        block-size: 100%;
+        display: grid;
+        gap: 1rem;
+        inline-size: 100%;
+
+        @media (width > 1024px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .ar-card {
+        container-type: size;
+        inline-size: 100%;
+        block-size: 100%;
+        text-decoration: none;
+        min-block-size: 280px;
+        position: relative;
+
+        &:hover::after {
+            opacity: 1;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            inset: 0;
+            mix-blend-mode: multiply;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 0.2s ease;
+        }
+    }
+
+    .ar-card-1::after {
+        background-color: hsl(343, 98%, 52%);
+    }
+
+    .ar-card-2::after {
+        background-color: hsl(343, 98%, 52%);
+    }
+
+    .ar-card-3::after {
+        background-color: hsl(343, 98%, 52%);
+    }
+
+    .ar-card-4::after {
+        background-color: hsl(343, 98%, 52%);
+    }
+
+    .ar-visual {
+        background-color: black;
+        block-size: 100%;
+        display: grid;
+        inline-size: 100%;
+        overflow: hidden;
+        place-items: center;
+
+        >* {
+            grid-area: 1/1;
+        }
+    }
+
+    .ar-card-img {
+        block-size: 100cqb;
+        inline-size: 100cqi;
+        border-radius: inherit;
+        display: block;
+        background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+        filter: grayscale();
+        object-fit: cover;
+    }
+
+    .ar-figcaption {
+        z-index: 2;
+        color: white;
+        font: 400 8cqi / normal system-ui, sans-serif;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)); 
+    }
+}
+
+
+:host {
+    display: block;
+  }
+  
+  .best-sellers-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .best-sellers-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+   
+  }
+  
+  @media (max-width: 768px) {
+    .best-sellers-title {
+        font-size: 2rem;
+    }
+   
+  }
+  
+  @media (max-width: 480px) {
+    .discount-title {
+        font-size: 1.5rem;
+    }
+  
+  }
+  
