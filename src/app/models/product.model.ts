@@ -8,8 +8,6 @@ export interface Product {
   category: string;
   mainimage: string; 
   image1: string; 
-  image2: string; 
-  image3: string; 
   descuento: boolean;
   destacado: boolean;
   
@@ -27,12 +25,10 @@ export class Producto implements Product {
   category: string;
   mainimage: string; 
   image1: string; 
-  image2: string; 
-  image3: string; 
   descuento: boolean;
   destacado: boolean;
     
-  constructor(id: number, name: string, description: string, price: number, pricedesc: number, porcentajedescuento: number, category: string, mainimage: string, image1: string, image2: string, image3: string, descuento: boolean, destacado: boolean) {
+  constructor(id: number, name: string, description: string, price: number, pricedesc: number, porcentajedescuento: number, category: string, mainimage: string, image1: string,descuento: boolean, destacado: boolean) {
     this.id = id;
    
     this.name = name;
@@ -43,8 +39,6 @@ export class Producto implements Product {
     this.category = category;
     this.mainimage = mainimage;
     this.image1 = image1;
-    this.image2 = image2;
-    this.image3 = image3;
     this.descuento = descuento;
     this.destacado = destacado;
   }

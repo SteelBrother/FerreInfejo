@@ -11,8 +11,6 @@ export const PRODUCTS: Product[] = [
     'herramientas',
     'assets/imagenes/herramientas_fe_pro_pulidora_principal.jpg',
     'assets/imagenes/herramientas_fe_pro_pulidora_1.jpg',
-    'assets/imagenes/herramientas_fe_pro_pulidora_2.jpg',
-    'assets/imagenes/herramientas_fe_pro_pulidora_3.jpg',
     false,
     false
   ), 
@@ -26,8 +24,6 @@ export const PRODUCTS: Product[] = [
     'herramientas',
     'assets/imagenes/herramientas_fe_pro_pulidorab_ind_2100w_principal.jpg',
     'assets/imagenes/herramientas_fe_pro_pulidorab_ind_2100w_1.jpg',
-    'assets/imagenes/herramientas_fe_pro_pulidorab_ind_2100w_2.jpg',
-    'assets/imagenes/herramientas_fe_pro_pulidorab_ind_2100w_3.jpg',
     false,
     false
   ),
@@ -41,8 +37,6 @@ export const PRODUCTS: Product[] = [
     'herramientas',
     'assets/imagenes/herramientas_fe_pro_pulidorab_principal.jpg',
     'assets/imagenes/herramientas_fe_pro_pulidorab_1.jpg',
-    'assets/imagenes/herramientas_fe_pro_pulidorab_2.jpg',
-    'assets/imagenes/herramientas_fe_pro_pulidorab_3.jpg',
     false,
     false
   ),
@@ -56,8 +50,6 @@ export const PRODUCTS: Product[] = [
     'herramientas',
     'assets/imagenes/herramientas_fe_pro_taladro_rtmt_ind_700w_principal.jpg',
     'assets/imagenes/herramientas_fe_pro_taladro_rtmt_ind_700w_1.jpg',
-    'assets/imagenes/herramientas_fe_pro_taladro_rtmt_ind_700w_2.jpg',
-    'assets/imagenes/herramientas_fe_pro_taladro_rtmt_ind_700w_3.jpg',
     false,
     true
   ),
@@ -71,8 +63,6 @@ export const PRODUCTS: Product[] = [
     'herramientas',
     'assets/imagenes/herramientas_fe_pro_herramientas_set_a_principal.jpg',
     'assets/imagenes/herramientas_fe_pro_herramientas_set_a_1.jpg',
-    'assets/imagenes/herramientas_fe_pro_herramientas_set_a_2.jpg',
-    'assets/imagenes/herramientas_fe_pro_herramientas_set_a_3.jpg',
     false,
     false
   ),
@@ -86,8 +76,6 @@ export const PRODUCTS: Product[] = [
     'electrico',
     'assets/imagenes/electrico_elec_caja5600_principal.jpg',
     'assets/imagenes/electrico_elec_caja5600_1.jpg',
-    'assets/imagenes/electrico_elec_caja5600_2.jpg',
-    'assets/imagenes/electrico_elec_caja5600_3.jpg',
     false,
     false
   ),
@@ -101,8 +89,6 @@ export const PRODUCTS: Product[] = [
     'electrico',
     'assets/imagenes/electrico_elect_generador_bauker_220w_principal.jpg',
     'assets/imagenes/electrico_elect_generador_bauker_220w_1.jpg',
-    'assets/imagenes/electrico_elect_generador_bauker_220w_2.jpg',
-    'assets/imagenes/electrico_elect_generador_bauker_220w_3.jpg',
     false,
     false
   ),
@@ -116,8 +102,6 @@ export const PRODUCTS: Product[] = [
     'electrico',
     'assets/imagenes/electrico_elect_generador_bauker_2400w_principal.jpg',
     'assets/imagenes/electrico_elect_generador_bauker_2400w_1.jpg',
-    'assets/imagenes/electrico_elect_generador_bauker_2400w_2.jpg',
-    'assets/imagenes/electrico_elect_generador_bauker_2400w_3.jpg',
     false,
     false
   ),
@@ -131,8 +115,6 @@ export const PRODUCTS: Product[] = [
     'electrico',
     'assets/imagenes/electrico_elect_linterna_manija_principal.jpg',
     'assets/imagenes/electrico_elect_linterna_manija_1.jpg',
-    'assets/imagenes/electrico_elect_linterna_manija_2.jpg',
-    'assets/imagenes/electrico_elect_linterna_manija_3.jpg',
     true,
     true
   ),
@@ -146,8 +128,6 @@ export const PRODUCTS: Product[] = [
     'electrico',
     'assets/imagenes/electrico_elect_panelsolar_philips_control_principal.jpg',
     'assets/imagenes/electrico_elect_panelsolar_philips_control_1.jpg',
-    'assets/imagenes/electrico_elect_panelsolar_philips_control_2.jpg',
-    'assets/imagenes/electrico_elect_panelsolar_philips_control_3.jpg',
     true,
     false
   ),
@@ -161,8 +141,6 @@ export const PRODUCTS: Product[] = [
     'materiales',
     'assets/imagenes/materiales_mc_bloque_medioseishuecos_rojo_principal.jpg',
     'assets/imagenes/materiales_mc_bloque_medioseishuecos_rojo_1.jpg',
-    'assets/imagenes/materiales_mc_bloque_medioseishuecos_rojo_2.jpg',
-    'assets/imagenes/materiales_mc_bloque_medioseishuecos_rojo_3.jpg',
     false,
     false
   ),
@@ -176,8 +154,6 @@ export const PRODUCTS: Product[] = [
     'materiales',
     'assets/imagenes/materiales_mc_bloque_seishuecos_rojo_principal.jpg',
     'assets/imagenes/materiales_mc_bloque_seishuecos_rojo_1.jpg',
-    'assets/imagenes/materiales_mc_bloque_seishuecos_rojo_2.jpg',
-    'assets/imagenes/materiales_mc_bloque_seishuecos_rojo_3.jpg',
     true,
     false
   ),
@@ -191,8 +167,6 @@ export const PRODUCTS: Product[] = [
     'materiales',
     'assets/imagenes/materiales_mc_cemento_argos_25kg_principal.jpg',
     'assets/imagenes/materiales_mc_cemento_argos_25kg_1.jpg',
-    'assets/imagenes/materiales_mc_cemento_argos_25kg_2.jpg',
-    'assets/imagenes/materiales_mc_cemento_argos_25kg_3.jpg',
     true,
     false
   ),
@@ -206,8 +180,6 @@ export const PRODUCTS: Product[] = [
     'materiales',
     'assets/imagenes/materiales_mc_cemento_topex_40kg_principal.jpg',
     'assets/imagenes/materiales_mc_cemento_topex_40kg_1.jpg',
-    'assets/imagenes/materiales_mc_cemento_topex_40kg_2.jpg',
-    'assets/imagenes/materiales_mc_cemento_topex_40kg_3.jpg',
     false,
     false
   ),
@@ -221,8 +193,6 @@ export const PRODUCTS: Product[] = [
     'materiales',
     'assets/imagenes/materiales_mc_cementogris_corona_50kg_principal.jpg',
     'assets/imagenes/materiales_mc_cementogris_corona_50kg_1.jpg',
-    'assets/imagenes/materiales_mc_cementogris_corona_50kg_2.jpg',
-    'assets/imagenes/materiales_mc_cementogris_corona_50kg_3.jpg',
     false,
     false
   ),
@@ -236,8 +206,6 @@ export const PRODUCTS: Product[] = [
     'materiales',
     'assets/imagenes/materiales_mc_pegacor_bloqvidrio_10kg_principal.jpg',
     'assets/imagenes/materiales_mc_pegacor_bloqvidrio_10kg_1.jpg',
-    'assets/imagenes/materiales_mc_pegacor_bloqvidrio_10kg_2.jpg',
-    'assets/imagenes/materiales_mc_pegacor_bloqvidrio_10kg_3.jpg',
     false,
     true
   ),
@@ -251,8 +219,6 @@ export const PRODUCTS: Product[] = [
     'plomeria',
     'assets/imagenes/plomeria_pl_bomba_destapatuberia_principal.jpg',
     'assets/imagenes/plomeria_pl_bomba_destapatuberia_1.jpg',
-    'assets/imagenes/plomeria_pl_bomba_destapatuberia_2.jpg',
-    'assets/imagenes/plomeria_pl_bomba_destapatuberia_3.jpg',
     false,
     false
   ),
@@ -266,8 +232,6 @@ export const PRODUCTS: Product[] = [
     'plomeria',
     'assets/imagenes/plomeria_pl_bomba_sanitario_grival_principal.jpg',
     'assets/imagenes/plomeria_pl_bomba_sanitario_grival_1.jpg',
-    'assets/imagenes/plomeria_pl_bomba_sanitario_grival_2.jpg',
-    'assets/imagenes/plomeria_pl_bomba_sanitario_grival_3.jpg',
     false,
     true
   ),
@@ -281,8 +245,6 @@ export const PRODUCTS: Product[] = [
     'plomeria',
     'assets/imagenes/plomeria_pl_sifa_lavaplatos_grival_principal.jpg',
     'assets/imagenes/plomeria_pl_sifa_lavaplatos_grival_1.jpg',
-    'assets/imagenes/plomeria_pl_sifa_lavaplatos_grival_2.jpg',
-    'assets/imagenes/plomeria_pl_sifa_lavaplatos_grival_3.jpg',
     false,
     false
   ),
@@ -296,8 +258,6 @@ export const PRODUCTS: Product[] = [
     'plomeria',
     'assets/imagenes/plomeria_pl_tanque_eternit_1000l_principal.jpg',
     'assets/imagenes/plomeria_pl_tanque_eternit_1000l_1.jpg',
-    'assets/imagenes/plomeria_pl_tanque_eternit_1000l_2.jpg',
-    'assets/imagenes/plomeria_pl_tanque_eternit_1000l_3.jpg',
     false,
     false
   ),
@@ -311,8 +271,6 @@ export const PRODUCTS: Product[] = [
     'plomeria',
     'assets/imagenes/plomeria_pl_tuberia_cobre_t_principal.jpg',
     'assets/imagenes/plomeria_pl_tuberia_cobre_t_1.jpg',
-    'assets/imagenes/plomeria_pl_tuberia_cobre_t_2.jpg',
-    'assets/imagenes/plomeria_pl_tuberia_cobre_t_3.jpg',
     false,
     false
   ),
@@ -326,8 +284,6 @@ export const PRODUCTS: Product[] = [
     'seguridad',
     'assets/imagenes/seguridad_si_casco_jacson_bgr_principal.jpg',
     'assets/imagenes/seguridad_si_casco_jacson_bgr_1.jpg',
-    'assets/imagenes/seguridad_si_casco_jacson_bgr_2.jpg',
-    'assets/imagenes/seguridad_si_casco_jacson_bgr_3.jpg',
     false,
     false
   ),
@@ -341,8 +297,6 @@ export const PRODUCTS: Product[] = [
     'seguridad',
     'assets/imagenes/seguridad_si_gafas_ansi_z78_principal.jpg',
     'assets/imagenes/seguridad_si_gafas_ansi_z78_1.jpg',
-    'assets/imagenes/seguridad_si_gafas_ansi_z78_2.jpg',
-    'assets/imagenes/seguridad_si_gafas_ansi_z78_3.jpg',
     false,
     false
   ),
@@ -356,8 +310,6 @@ export const PRODUCTS: Product[] = [
     'seguridad',
     'assets/imagenes/seguridad_si_guante_edge_gris_48-128_principal.jpg',
     'assets/imagenes/seguridad_si_guante_edge_gris_48-128_1.jpg',
-    'assets/imagenes/seguridad_si_guante_edge_gris_48-128_2.jpg',
-    'assets/imagenes/seguridad_si_guante_edge_gris_48-128_3.jpg',
     false,
     false
   ),
@@ -371,8 +323,6 @@ export const PRODUCTS: Product[] = [
     'seguridad',
     'assets/imagenes/seguridad_si_guante_exo_ironverde_principal.jpg',
     'assets/imagenes/seguridad_si_guante_exo_ironverde_1.jpg',
-    'assets/imagenes/seguridad_si_guante_exo_ironverde_2.jpg',
-    'assets/imagenes/seguridad_si_guante_exo_ironverde_3.jpg',
     false,
     false
   ),
@@ -386,8 +336,6 @@ export const PRODUCTS: Product[] = [
     'seguridad',
     'assets/imagenes/seguridad_si_guante_kpn_naranja_principal.jpg',
     'assets/imagenes/seguridad_si_guante_kpn_naranja_1.jpg',
-    'assets/imagenes/seguridad_si_guante_kpn_naranja_2.jpg',
-    'assets/imagenes/seguridad_si_guante_kpn_naranja_3.jpg',
     false,
     false
   )
