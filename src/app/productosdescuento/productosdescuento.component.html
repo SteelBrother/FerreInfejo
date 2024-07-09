@@ -1,5 +1,5 @@
 <div class="discount-products-container">
-    <h1 class="discount-title">Productos en Descuento</h1>
+    <h1 class="discount-title">Ofertas y descuentos</h1>
     <div class="gallery">
         <div *ngFor="let product of products">  
             <a (click)="viewProduct(product.id)" class="product-link">
@@ -20,7 +20,7 @@
 </div>
 
 <div class="discount-products-container">
-    <h1 class="discount-title">Productos Mas Vendidos</h1>
+    <h1 class="discount-title">Los Mas Vendidos</h1>
     <div class="gallery">
         <div *ngFor="let product of productsDestacados">  
             <a (click)="viewProduct(product.id)" class="product-link">
