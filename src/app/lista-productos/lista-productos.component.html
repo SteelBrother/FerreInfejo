@@ -10,9 +10,12 @@
       <button class="custom-btn" (click)="filterProducts('Abrasivos')">Abrasivos</button>
     </div>
     <section class="products-list">
+      
       <div *ngFor="let product of filteredProducts" class="product-item" [class]="product.category">
+        <a (click)="viewProduct(product.id, product.name)" style="background-color: #dededea8;margin-bottom: -10px;">
         <img [src]="product.mainimage" alt="">
         <a style="font-size: 13px;" (click)="viewProduct(product.id, product.name)">{{ product.name }}</a>
+      </a>
       </div>
     </section>
     <button class="custom-btn load-more" (click)="loadMoreProducts()">Ver más</button>
