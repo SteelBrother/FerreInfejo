@@ -48,18 +48,20 @@
   /* Media Queries para tamaños específicos de pantalla */
   @media (min-width: 1500px) {
     .banner {
-      height: 35vh; /* Ocupa el 15% del alto total en pantallas muy grandes */
+      height: 25vh; /* Ocupa el 15% del alto total en pantallas muy grandes */
     }
   
     .text-container {
-      width: 50%; /* Ancho del contenedor de texto en pantallas muy grandes */
-      text-align: right;
-      margin-left: 50%;
+      width: 100%; /* Ancho del contenedor de texto en pantallas muy grandes */
+      text-align: center;
+    
        }
 
     .banner img {
-        max-width: 80%;
+        max-width: 100%;
         margin-bottom: 0%;
+        max-height: 120px;
+        align-content: center;
     }
   }
   
