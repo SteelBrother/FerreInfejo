@@ -1,13 +1,13 @@
 <div class="wrap">
-  <h1 class="title">Algunos de nuestros productos</h1>
+  <h1 class="title">Productos</h1>
   <div class="store-wrapper">
     <div class="category_list">
       <button class="custom-btn" (click)="filterProducts('all')">Todo</button>
-      <button class="custom-btn" (click)="filterProducts('herramientas')">Herramientas</button>
-      <button class="custom-btn" (click)="filterProducts('materiales')">Construcción</button>
-      <button class="custom-btn" (click)="filterProducts('seguridad')">Seguridad</button>
-      <button class="custom-btn" (click)="filterProducts('electrico')">Electrico</button>
-      <button class="custom-btn" (click)="filterProducts('plomeria')">Plomeria</button>
+      <button class="custom-btn" (click)="filterProducts('Herramientas')">Herramientas</button>
+      <button class="custom-btn" (click)="filterProducts('Pintura')">Pintura</button>
+      <button class="custom-btn" (click)="filterProducts('Seguridad')">Seguridad</button>
+      <button class="custom-btn" (click)="filterProducts('Electrico')">Electrico</button>
+      <button class="custom-btn" (click)="filterProducts('Abrasivos')">Abrasivos</button>
     </div>
     <section class="products-list">
       <div *ngFor="let product of filteredProducts" class="product-item" [class]="product.category">

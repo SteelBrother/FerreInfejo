@@ -7,7 +7,7 @@
                     <div class="discount-badge">{{ product.porcentajedescuento }}% Dto</div>
                     <img [src]="product.mainimage" alt="{{product.name}}">
                     <h3>{{product.name}}</h3>
-                    <p>{{product.description}}</p>
+                    <!-- <p>{{product.fichatec}}</p> -->
                     <div class="price">
                         <h6 class="old-price">${{product.price}}</h6>
                         <h6 class="new-price">${{product.pricedesc}}</h6>
@@ -27,8 +27,8 @@
                 <div class="content">
                     <img [src]="product.mainimage" alt="{{product.name}}">
                     <h3>{{product.name}}</h3>
-                    <p>{{product.description}}</p>
-                    <h6>{{product.price}}</h6>
+                    <!-- <p>{{product.fichatec}}</p> -->
+                    <h6>{{product.pricepublic}}</h6>
                     <ul>
                         <li><i class="fas fa-star checked"></i></li>
                         <li><i class="fas fa-star checked"></i></li>

@@ -74,7 +74,7 @@
         border: none;
         background-color: inherit;
         border-block-end: 1px solid currentColor;
-        color: white;
+        color: rgb(255, 255, 255);
         padding-block: 0.25rem;
         min-inline-size: 5ch;
         inline-size: 100%;
@@ -162,19 +162,20 @@ figcaption, figure, main {
     }
 
     .ar-card-1::after {
-        background-color: hsl(343, 98%, 52%);
+        background-color: hsl(357, 63%, 45%);
     }
 
     .ar-card-2::after {
-        background-color: hsl(343, 98%, 52%);
+        background-color: hsl(357, 63%, 45%);
+
     }
 
     .ar-card-3::after {
-        background-color: hsl(343, 98%, 52%);
+        background-color: hsl(357, 63%, 45%);
     }
 
     .ar-card-4::after {
-        background-color: hsl(343, 98%, 52%);
+     background-color: hsl(357, 63%, 45%);
     }
 
     .ar-visual {
@@ -204,6 +205,7 @@ figcaption, figure, main {
         z-index: 2;
         color: white;
         font: 400 8cqi / normal system-ui, sans-serif;
+        text-shadow: #222 2px 2px 1px;
     }
 }
 
@@ -214,7 +216,7 @@ figcaption, figure, main {
   
   .best-sellers-container {
     text-align: center;
-    margin: 20px 0;
+    margin: 0px 0;
   }
   .best-sellers-title {
     font-size: 2.5rem;

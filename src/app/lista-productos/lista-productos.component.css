@@ -18,8 +18,8 @@ body {
 .title {
     font-size: 2.5rem;
     color: #333;
-    margin: 30px 0;
-    text-align: center;
+    margin: 50px 0;
+    text-align: left;
 }
 
 .title:after {
@@ -176,6 +176,10 @@ body {
         flex-direction: column;
     }
 
+    .title{
+        text-align: center;
+    }
+
     .category_list .category_item {
         width: 100%;
         margin-bottom: 10px;
@@ -185,6 +189,9 @@ body {
 @media screen and (max-width: 600px) {
     .products-list .product-item {
         width: 47.5%;
+    }
+    .title{
+        text-align: center;
     }
 
     .products-list .product-item:nth-child(3n+1) {
