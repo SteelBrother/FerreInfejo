@@ -7,12 +7,11 @@ import { PagproductosComponent } from './pagproductos/pagproductos.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
-  { path: 'product/:id', component: ProductoComponent }, // Ruta con parámetro :id
-  { path: 'listadoproductos/:nombre', component: PagproductosComponent }, // Ruta con parámetro :nombre
-  { path: 'listadoproductos', component: PagproductosComponent }, 
-  { path: '**', redirectTo: '' } // Manejo de rutas no encontradas
+  { path: 'product/:nombre', component: ProductoComponent },
+  { path: 'listadoproductos/:nombre', component: PagproductosComponent },
+  { path: 'listadoproductos', component: PagproductosComponent },
+  { path: '**', redirectTo: '' }
 ];
-
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'top', // Desplazamiento hacia la parte superior en la navegación

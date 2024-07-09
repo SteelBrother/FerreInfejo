@@ -4,44 +4,51 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Product } from '../models/product.model';
 
-
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
-  styleUrl: './producto.component.scss'
+  styleUrls: ['./producto.component.scss']
 })
 export class ProductoComponent implements OnInit {
   product: Product | undefined;
+  products: Product[] = [];
+  productsFilter: Product[] = [];
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private productService: ProductService,private renderer: Renderer2, @Inject(PLATFORM_ID) private platformId: Object
+    private productService: ProductService,
+    private renderer: Renderer2,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   ngOnInit(): void {
-
-  
+    this.products = this.productService.getProducts();
     if (isPlatformBrowser(this.platformId)) {
-        this.loadScript();
-    }
-    
-    // Obtener el id del producto desde los parámetros de la URL
-    const productIdParam = this.route.snapshot.paramMap.get('id');
-    
-    if (productIdParam === null || isNaN(+productIdParam)) {
-      // Manejar el caso donde el id no es válido (puedes redirigir o mostrar un mensaje de error)
-      this.router.navigateByUrl('/'); // Redirigir a la página principal u otra página de manejo de errores
-      return;
+      this.loadScript();
     }
 
-    const productId = +productIdParam;
-    this.product = this.productService.getProductById(productId);
+    // Obtener el nombre del producto desde los parámetros de la URL
+    const productName = this.route.snapshot.paramMap.get('nombre');
 
-    if (!this.product) {
-      // Manejar el caso donde el producto no existe (puedes redirigir o mostrar un mensaje de error)
-      this.router.navigate(['/']); // Redirigir a la página principal u otra página de manejo de errores
-    }
+    // Obtener el ID del producto desde los parámetros de consulta (queryParams)
+    this.route.queryParams.subscribe(params => {
+      const productId = params['id'];
+
+      if (productId === undefined || isNaN(productId)) {
+        // Manejar el caso donde el ID no es válido
+        this.router.navigateByUrl('/'); // Redirigir a la página principal u otra página de manejo de errores
+        return;
+      }
+
+      // Obtener el producto por ID
+      this.product = this.productService.getProductById(+productId);
+      if (!this.product) {
+        this.router.navigate(['/']);
+      } else {
+        this.productsFilter = this.productService.getProductsByCategory(this.product.category);
+      }
+    });
   }
 
   loadScript() {

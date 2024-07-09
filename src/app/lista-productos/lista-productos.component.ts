@@ -44,11 +44,21 @@ export class ListaProductosComponent implements OnInit {
     if (category === 'all') {
       this.filteredProducts = this.getRandomProducts(); // Mostrar todos los productos
     } else {
-      this.filteredProducts = this.products.filter(p => p.category === category);
+      this.filteredProducts = this.products
+      .filter(p => p.category === category)
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 12);
+
     }
   }
 
-  viewProduct(productId: number) {
-    this.router.navigate(['/product', productId]);
+  // viewProduct(productId: number) {
+  //   this.router.navigate(['/product', productId]);
+  // }
+  viewProduct(productId: number, productName: string) {
+    console.log(productId, productName);
+    this.router.navigate(['/product', productName], { queryParams: { id: productId } });
   }
+  
+  
 }

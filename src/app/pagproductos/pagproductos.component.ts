@@ -99,7 +99,10 @@ export class PagproductosComponent implements OnInit {
     }
   }
 
-  viewProduct(productId: number) {
-    this.router.navigate(['/product', productId]);
+  // viewProduct(productId: number) {
+  //   this.router.navigate(['/product', productId]);
+  // }
+  viewProduct(productId: number, productName: string) {
+    this.router.navigate(['/product', productName], { queryParams: { id: productId } });
   }
 }

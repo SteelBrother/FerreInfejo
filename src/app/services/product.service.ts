@@ -36,4 +36,7 @@ export class ProductService {
   getProductosDestacados(): Product[] {
     return this.products.filter(product => product.destacado === true);
   }
+  getProductsByCategory(category: string, limit: number = 4): Product[] {
+    return this.products.filter(product => product.category === category).slice(0, limit);
+  }
 }
