@@ -37,6 +37,15 @@ export class ProductService {
     return this.products.filter(product => product.destacado === true);
   }
   getProductsByCategory(category: string, limit: number = 4): Product[] {
-    return this.products.filter(product => product.category === category).slice(0, limit);
+    const filteredProducts = this.products.filter(product => product.category === category);
+    return this.shuffleArray(filteredProducts).slice(0, limit);
+  }
+
+  private shuffleArray(array: any[]): any[] {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   }
 }
