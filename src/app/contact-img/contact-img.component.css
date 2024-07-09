@@ -146,6 +146,26 @@
               transform: translateX(-50%);
           }
       }
+      @media (max-width: 1024px) {
+        .banner {
+            height: 22vh; /* Ocupa el 0% del alto total en móvil */
+        }
+        .banner img { 
+          min-height: auto;
+          max-width: 100%;
+        }
+      }
+        
+      @media (max-width: 912px) {
+        .banner {
+            height: 18vh; /* Ocupa el 0% del alto total en móvil */
+        }
+        .banner img { 
+          min-height: auto;
+          max-width: 100%;
+        }
+      }
+        
 
       @media (max-width: 660px) {
         .banner {
@@ -159,7 +179,7 @@
         
       @media (max-width: 540px) {
         .banner {
-            height: 56vh; /* Ocupa el 0% del alto total en móvil */
+            height: 50vh; /* Ocupa el 0% del alto total en móvil */
         }
         .banner img { 
           min-height: auto;
@@ -181,4 +201,14 @@
             left: 50%;
             transform: translateX(-50%);
         }
+    }
+
+    @media (max-width: 344px) {
+      .banner {
+          height: 40vh; /* Ocupa el 0% del alto total en móvil */
+      }
+      .banner img { 
+        min-height: auto;
+        max-width: 100%;
+      }
     }
