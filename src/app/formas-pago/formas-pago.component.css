@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     width: 100%;
-    height: 25vh; /* Inicialmente ocupa el 25% del alto total en escritorio */
+    height: 35vh; /* Inicialmente ocupa el 25% del alto total en escritorio */
     background-color: #ffffff;
     background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@
     text-align: center;
     color: #000000;
     font-family: 'Arial', sans-serif; /* Usando la familia de fuentes Arial */
-    padding: 20px; /* Espaciado interno del contenedor de texto */
+    
     box-sizing: border-box; /* Incluye el padding en el ancho total */
     background: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para mejorar la legibilidad */
     border-radius: 10px;
@@ -48,7 +48,7 @@
   /* Media Queries para tamaños específicos de pantalla */
   @media (min-width: 1500px) {
     .banner {
-      height: 15vh; /* Ocupa el 15% del alto total en pantallas muy grandes */
+      height: 35vh; /* Ocupa el 15% del alto total en pantallas muy grandes */
     }
   
     .text-container {
@@ -65,12 +65,13 @@
   
   @media (min-width: 768px) and (max-width: 1499px) {
     .banner {
-      height: 20vh; /* Ocupa el 20% del alto total en pantallas medianas */
+      height: 25vh; /* Ocupa el 20% del alto total en pantallas medianas */
+      align-content: center;
     }
-    .banner img
+    
   
     .text-container {
-      width: 50%; /* Ancho del contenedor de texto en pantallas medianas */
+      width: 70%; /* Ancho del contenedor de texto en pantallas medianas */
     }
   }
   
@@ -80,14 +81,14 @@
     }
   
     .text-container {
-      padding: 10px; /* Espaciado interno más pequeño en móvil */
-      width: 90%; /* Ancho del contenedor de texto en móvil */
+     
+      width: 1000%; /* Ancho del contenedor de texto en móvil */
       text-align: center; /* Alinea el texto al centro en móvil */
        /* Separa el texto de la imagen */
     }
   
     .banner img {
-      width: 80%;
+      width: 90%;
       height: auto;
       margin-top:  5%;
       left: 5%;
@@ -96,21 +97,21 @@
   
   @media (max-width: 660px) {
     .banner {
-      height: 30vh; /* Ocupa el 30% del alto total en pantallas muy pequeñas */
+      height: 25vh; /* Ocupa el 30% del alto total en pantallas muy pequeñas */
     }
   
     .text-container {
-      width: 80%; /* Ancho del contenedor de texto en pantallas muy pequeñas */
+      width: 100%; /* Ancho del contenedor de texto en pantallas muy pequeñas */
       margin-bottom: 20px; /* Separa el texto de la imagen */
+      font-size: 80%;
     }
   
-    .banner img {
+    .banner img{
       margin-top: 10%;
-      width: 80%;
-      left: 15%;
-      right: 5%;
+      width: 100%;
+   
 
       height: auto;
-      bottom: 15%;
+      bottom: 10%;
     }
   }
