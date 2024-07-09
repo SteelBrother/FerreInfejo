@@ -2,7 +2,7 @@
     <h1 class="discount-title">Productos en Descuento</h1>
     <div class="gallery">
         <div *ngFor="let product of products">  
-            <a (click)="viewProduct(product.id)" class="product-link">
+            <a (click)="viewProduct(product.id, product.name)" class="product-link">
                 <div class="content">
                     <div class="discount-badge">{{ product.porcentajedescuento }}% Dto</div>
                     <img [src]="product.mainimage" alt="{{product.name}}">
@@ -23,7 +23,7 @@
     <h1 class="discount-title">Productos Mas Vendidos</h1>
     <div class="gallery">
         <div *ngFor="let product of productsDestacados">  
-            <a (click)="viewProduct(product.id)" class="product-link">
+            <a (click)="viewProduct(product.id, product.name)" class="product-link">
                 <div class="content">
                     <img [src]="product.mainimage" alt="{{product.name}}">
                     <h3>{{product.name}}</h3>

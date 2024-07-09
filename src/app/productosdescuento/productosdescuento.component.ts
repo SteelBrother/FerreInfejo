@@ -20,7 +20,7 @@ export class ProductosdescuentoComponent implements OnInit {
     this.productsDestacados = this.productService.getProductosDestacados();
   }
 
-  viewProduct(productId: number) {
-    this.router.navigate(['/product', productId]);
+  viewProduct(productId: number, productName: string) {
+    this.router.navigate(['/product', productName], { queryParams: { id: productId } });
   }
 }

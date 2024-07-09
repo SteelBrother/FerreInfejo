@@ -51,6 +51,9 @@ export class ProductoComponent implements OnInit {
     });
   }
 
+  viewProduct(productId: number, productName: string) {
+    this.router.navigate(['/product', productName], { queryParams: { id: productId } });
+  }
   loadScript() {
     const script = this.renderer.createElement('script');
     script.src = 'assets/js/scriptproducto2.js';

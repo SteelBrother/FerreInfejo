@@ -1,4 +1,4 @@
-<div *ngIf="product" style="margin-top: 7vw;">
+<div *ngIf="product" class="contmargin">
     <!-- Breadcrumb -->
     <header style="background-color:#fafafa">
         <div class="container p-0">
@@ -171,15 +171,17 @@
     <h4 class="text-center text-uppercase">Tambien te puede interesar</h4>
     <div class="row no-gutters gutter-20 mt-5 mb-20px">
       <div *ngFor="let product of productsFilter" class="col-6 col-md-3">
-        <div style="border:2px solid #fafafa" class="w-100">
-          <div class="d-flex justify-content-center align-items-center">
-            <img class="img-fluid" [src]="product.mainimage" alt="{{ product.name }}" />
-          </div>
-          <div class="text-center py-4">
-            <h6>{{ product.name }}</h6>
-            <h6 class="text-muted font-weight-normal">{{ product.price | currency }}</h6>
-          </div>
-        </div>
+        <a (click)="viewProduct(product.id, product.name)" class="product-link">
+            <div style="border:2px solid #fafafa" class="w-100">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img class="img-fluid product-image" [src]="product.mainimage" alt="{{ product.name }}" />
+                </div>
+                <div class="text-center py-4">
+                  <h6 class="product-name">{{ product.name }}</h6>
+                  <h6 class="text-muted font-weight-normal product-price">{{ product.price | currency }}</h6>
+                </div>
+              </div>
+        </a>      
       </div>
     </div>
   </div>
