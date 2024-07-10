@@ -190,7 +190,7 @@
         
       @media (max-width: 540px) {
         .banner {
-            height: 35vh; /* Ocupa el 0% del alto total en móvil */
+            height: 28vh; /* Ocupa el 0% del alto total en móvil */
         }
         .banner img { 
           min-height: 100%;
