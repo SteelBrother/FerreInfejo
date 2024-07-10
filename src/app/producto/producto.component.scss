@@ -1167,41 +1167,41 @@ background-color: #efefef;
 
 /* Estilos generales */
 .contmargin {
-	margin-top: 6vw;
+
   }
   
   /* Pantallas pequeñas (teléfonos en modo vertical) */
   @media (max-width: 576px) {
 	.contmargin {
-		margin-top: 14vw;
+		
 	}
   }
   
   /* Pantallas medianas (teléfonos en modo horizontal, tabletas en modo vertical) */
   @media (min-width: 577px) and (max-width: 768px) {
 	.contmargin {
-		margin-top: 10vw;
+		
 	}
   }
   
   /* Pantallas grandes (tabletas en modo horizontal, pequeñas computadoras portátiles) */
   @media (min-width: 769px) and (max-width: 992px) {
 	.contmargin {
-		margin-top: 7vw;
+		
 	}
   }
   
   /* Pantallas extra grandes (computadoras portátiles grandes y monitores de escritorio) */
   @media (min-width: 993px) and (max-width: 1200px) {
 	.contmargin {
-		margin-top: 9vw;
+		
 	}
   }
   
   /* Pantallas muy grandes (monitores de escritorio grandes) */
   @media (min-width: 1201px) {
 	.contmargin {
-		margin-top: 7vw;
+		
 	}
   }
 

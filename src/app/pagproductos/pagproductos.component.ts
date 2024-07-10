@@ -62,10 +62,13 @@ export class PagproductosComponent implements OnInit {
   //   );
   updateFilteredProducts() {
     const filtered = this.products.filter(product =>
-      (product.name.toLowerCase().includes(this.searchTerm.toLowerCase())) &&
-      (this.selectedCategory ? product.category === this.selectedCategory : true) 
+      (
+        product.name.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+        product.ref.toLowerCase().includes(this.searchTerm.toLowerCase())
+      ) &&
+      (this.selectedCategory ? product.category === this.selectedCategory : true)
     );
-
+    this.filteredProducts = filtered;
 
     this.totalPages = Math.ceil(filtered.length / this.pageSize);
     const startIndex = (this.currentPage - 1) * this.pageSize;
