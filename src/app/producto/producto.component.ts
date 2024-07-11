@@ -67,4 +67,21 @@ export class ProductoComponent implements OnInit {
     };
     this.renderer.appendChild(document.body, script);
   }
+
+  sendWhatsAppMessage(productId: number) {
+    const product = this.products.find((p: Product) => p.id === productId);
+    if (product) {
+        const productName = product.name;
+        const productUrl = `${window.location.origin}/product/${encodeURIComponent(productName)}?id=${productId}`;
+        const message = `Hola quiero más información sobre ${productName},${product.fichatec}. Visita este enlace para más detalles: ${productUrl}`;
+        const phoneNumber = '3126063288';
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    } else {
+        console.error('Producto no encontrado');
+    }
+}
+
+
+
 }

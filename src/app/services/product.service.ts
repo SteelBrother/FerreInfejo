@@ -37,6 +37,9 @@ export class ProductService {
   getAllCategories(): Category[] {
     return this.categories;
   }
+  getFourCategories(): Category[] {
+    return this.categories.slice(0, 4);
+  }
   getProductosDescuento(): Product[] {
     return this.products.filter(product => product.descuento === true);
   }

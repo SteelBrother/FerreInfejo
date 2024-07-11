@@ -1255,3 +1255,42 @@ background-color: #efefef;
 .breadcrumb {
     margin-left: 10px;
 }
+
+.linksnav {
+	/* Estilos base para todos los tamaños de pantalla */
+	font-size: 16px; /* Ejemplo de estilo base */
+  }
+  
+    /* Pantallas grandes (escritorios pequeños) */
+	@media (max-width: 1024px) {
+		.linksnav {
+		  font-size: 14px; /* Ajusta el tamaño de la fuente para escritorios pequeños */
+		  padding: 20px;   /* Ejemplo de ajuste de padding */
+		}
+	  }
+	    /* Pantallas extra grandes (escritorios grandes) */
+  @media (min-width: 1025px) {
+	.linksnav {
+	  font-size: 18px; /* Ajusta el tamaño de la fuente para escritorios grandes */
+	  padding: 25px;   /* Ejemplo de ajuste de padding */
+	}
+  }
+	  @media (max-width: 768px) {
+		.linksnav {
+		  font-size: 15px; /* Ajusta el tamaño de la fuente para tabletas */
+		  padding: 15px;   /* Ejemplo de ajuste de padding */
+		}
+	  }
+	  
+  /* Pantallas pequeñas (móviles) */
+  @media (max-width: 600px) {
+	.linksnav {
+	  font-size: 11px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+	  padding: 10px;   /* Ejemplo de ajuste de padding */
+	}
+  }
+  
+  /* Pantallas medianas (tabletas) */
+
+  
+
