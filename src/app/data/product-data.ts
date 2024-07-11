@@ -1099,7 +1099,7 @@ export const PRODUCTS: Product[] = [
     '0',             // precio al publico (siempre va en 0)
     685000,             // precio si tiene descuento 
     0,             // el constructor siempre lo calcula, dejar en 0
-    'Herramientas',   // category
+    'Electrico',   // category
     'Truper',      // marca
     'assets/imagenes/CARBA-200.jpg', //img
    'assets/imagenes/CARBA-200.jpg', //img1
@@ -1116,7 +1116,7 @@ export const PRODUCTS: Product[] = [
     '0',             // precio al publico (siempre va en 0)
     925000,             // precio si tiene descuento 
     0,             // el constructor siempre lo calcula, dejar en 0
-    'Herramientas',   // category
+    'Electrico',   // category
     'Truper',      // marca
     'assets/imagenes/CARBA-200.jpg', //img
    'assets/imagenes/CARBA-200.jpg', //img1
@@ -1135,8 +1135,8 @@ export const PRODUCTS: Product[] = [
     0,             // el constructor siempre lo calcula, dejar en 0
     'Herramientas',   // category
     'Truper',      // marca
-    'assets/imagenes/CARBA-200.jpg', //img
-   'assets/imagenes/CARBA-200.jpg', //img1
+    'assets/imagenes/POLE-400.jpg', //img
+   'assets/imagenes/POLE-400.jpg', //img1
     false,           // descuento
     false           // destacado
   ),
@@ -2399,7 +2399,7 @@ new Producto(
   26080,            // precio
   '0',              // precio al publico (siempre va en 0)
   26080,            // precio si tiene descuento (sin descuento)
-  0,                // el constructor siempre lo calcula, dejar en 0
+  0,                // el constructor siempre lo , dejar en 0
   'Seguridad',      // category
   'Snow',           // marca
   'assets/imagenes/BG3515C.jpg', // img
