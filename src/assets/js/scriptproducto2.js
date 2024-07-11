@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
 
     // Aplica el zoom al cargar la página
-    applyElevateZoom();
+    // applyElevateZoom();
 
     // Aplica o remueve el zoom al redimensionar la ventana
     $(window).resize(function () {
@@ -56,7 +56,7 @@ $(document).ready(function () {
         $('#main-image').fadeOut(function () {
             $(this).attr('src', showing);
             $(this).fadeIn();
-            applyElevateZoom(); // Aplica el zoom si la imagen principal cambia
+            // applyElevateZoom();
         });
     });
 

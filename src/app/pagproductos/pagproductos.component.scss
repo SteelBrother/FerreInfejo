@@ -1045,3 +1045,21 @@ body {
     order: 3; /* Cambia el orden para el precio */
   }
 }}
+
+.back-button-container {
+  position: static;
+  top: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.back-button i {
+  color: #333;
+}

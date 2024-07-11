@@ -1241,3 +1241,17 @@ background-color: #efefef;
 .product-link:hover .product-price {
     color: #333;
 }
+.back-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.back-button i {
+    color: #333;
+}
+
+.breadcrumb {
+    margin-left: 10px;
+}

@@ -5,17 +5,24 @@ import { Product } from '../models/product.model';
 import { PRODUCTS } from '../data/product-data';
 import { Category } from '../models/category.model';
 import { CATEGORIES } from '../data/category-data';
+import { MARCAS } from '../data/marcas-data';
+import { Marca } from '../models/marca.model';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
   private products: Product[] = PRODUCTS;
   private categories : Category[] = CATEGORIES;
+  private Marcas : Marca[] = MARCAS;
   constructor() {}
 
   getProducts(): Product[] {
     return this.products;
   }
+  getMarcas(): Marca[] {
+    return this.Marcas;
+  }
+
 
   getProductById(id: number): Product | undefined {
     return this.products.find(product => product.id === id);

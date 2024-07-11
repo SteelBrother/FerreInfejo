@@ -3,6 +3,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { Product } from '../models/product.model';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-producto',
@@ -17,6 +18,7 @@ export class ProductoComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private location: Location,
     private productService: ProductService,
     private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object
@@ -51,6 +53,9 @@ export class ProductoComponent implements OnInit {
     });
   }
 
+  goBack() {
+    this.location.back();
+  }
   viewProduct(productId: number, productName: string) {
     this.router.navigate(['/product', productName], { queryParams: { id: productId } });
   }

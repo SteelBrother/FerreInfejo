@@ -1,8 +1,13 @@
 <div *ngIf="product" class="contmargin">
-    <!-- Breadcrumb -->
-    <header style="background-color:#fafafa">
-        <div class="container p-0">
-            <ol class="breadcrumb" style="background-color:#fafafa">
+    <!-- Botón de volver a la lista de productos y Breadcrumb -->
+    <header style="background-color:#fafafa;">
+        <div class="container p-0 d-flex align-items-center" style="margin-top: 2vw;">
+            <!-- Botón de volver a la lista de productos -->
+            <button (click)="goBack()" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb m-0 ml-3" style="background-color:#fafafa">
                 <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                 <li class="breadcrumb-item"><a href="#">{{product.category}}</a></li>
                 <li class="breadcrumb-item active">{{ product.name }}</li>
@@ -17,34 +22,12 @@
             <div class="row no-gutters mt-4">
                 <div class="col-12 col-md-7">
                   <div class="row no-gutters w-100">
-                      <!--                       Main picture-->
+                      <!-- Main picture -->
                       <div class="col-12 col-lg-10 flex-lg-last border-full-1px-solid border-color-a0">
                           <div class="d-flex justify-content-center align-items-center w-100 px-5">
                               <img src="{{product.mainimage}}" class="img-fluid" id="main-image" style="max-height:600px;">
                           </div>
                       </div>
-                      <!--                           side picture-->
-                      <!-- <div class=" col-12 col-lg-2 flex-lg-first mb-md-0 mb-4" style="display:block">
-                          <div class="row no-gutters ">
-  
-                              <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture active" role="button" data-target="side-1">
-                                  <div class="p-2 w-75">
-                                    <img src="{{product.image1}}"class="img-fluid ">
-                                  </div>
-                              </div>
-  
-                              <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture" role="button" data-target="side-2">
-                                  <div class="p-2 w-75">
-                                    <img src="{{product.image2}}" class="img-fluid ">
-                                  </div>
-                              </div>
-                              <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture" role="button" data-target="side-3">
-                                  <div class="p-2 w-75">
-                                    <img src="{{product.image3}}" class="img-fluid ">
-                                  </div>
-                              </div>
-                          </div>
-                      </div> -->
                   </div>
               </div>
                 <!-- Options Product -->
@@ -82,92 +65,27 @@
                     <li class="nav-item">
                         <a class="nav-link text-color-a1" data-toggle="tab" href="#shipping" role="tab">Reseñas</a>
                     </li>
-                    <!-- Puedes agregar más pestañas según sea necesario -->
                 </ul>
-                <!-- Tab panes -->
                 <div class="tab-content font-size-09" style="background-color:#fafafa">
                     <div class="tab-pane fade show active px-3 py-4 text-color-a2" id="description" role="tabpanel">
-  
                         <h5>{{product.description}}</h5>
-                      <!-- <table>
-                          <tr>
-                              <th>Característica</th>
-                              <th>Detalle</th>
-                          </tr>
-                          <tr>
-                              <td>Capacidad línea sencilla</td>
-                              <td>200kg</td>
-                          </tr>
-                          <tr>
-                              <td>Capacidad línea doble</td>
-                              <td>400kg</td>
-                          </tr>
-                          <tr>
-                              <td>Potencia</td>
-                              <td>850W</td>
-                          </tr>
-                          <tr>
-                              <td>Tensión / Frecuencia</td>
-                              <td>127 V / 60 Hz</td>
-                          </tr>
-                          <tr>
-                              <td>Corriente</td>
-                              <td>7.1A</td>
-                          </tr>
-                          <tr>
-                              <td>Apertura de gancho</td>
-                              <td>14mm</td>
-                          </tr>
-                          <tr>
-                              <td>Diámetro del cable</td>
-                              <td>3.8mm</td>
-                          </tr>
-                          <tr>
-                              <td>Dimensiones</td>
-                              <td>B 39 x A 22 x F 15cm</td>
-                          </tr>
-                          <tr>
-                              <td>Peso</td>
-                              <td>15.5kg</td>
-                          </tr>
-                          <tr>
-                              <td>Levantamiento máximo</td>
-                              <td>6m línea doble / 12m línea sencilla</td>
-                          </tr>
-                          <tr>
-                              <td>Ciclo de color recomendado</td>
-                              <td>1 min. de trabajo x 10 min. de descanso</td>
-                          </tr>
-                          <tr>
-                              <td>Máximo diario</td>
-                              <td>3h</td>
-                          </tr>
-                          <tr>
-                              <td>Descripcion</td>
-                              <td>{{ product.description }}</td>
-                          </tr>
-                      </table> -->
-                        <p></p>
                     </div>
                     <div class="tab-pane fade px-3 py-4 text-color-a2" id="details" role="tabpanel">
                         <p> Aquí puedes mostrar los detalles específicos del producto </p>
                     </div>
                     <div class="tab-pane fade px-3 py-4 text-color-a2" id="shipping" role="tabpanel">
-                        <!-- Información de envío -->
                     </div>
-                    <!-- Puedes agregar más pestañas según sea necesario -->
                 </div>
             </div>
         </div>
     </main>
-  </div>
-  
-  <div *ngIf="!product">
+</div>
+
+<div *ngIf="!product">
     <p>Producto no encontrado.</p>
-  </div>
-        <!-- Otros productos -->
-   <!--        You may also like-->
-   <div class="container mb-4">
+</div>
+
+<div class="container mb-4">
     <h4 class="text-center text-uppercase">Tambien te puede interesar</h4>
     <div class="row no-gutters gutter-20 mt-5 mb-20px">
       <div *ngFor="let product of productsFilter" class="col-6 col-md-3">
@@ -184,5 +102,4 @@
         </a>      
       </div>
     </div>
-  </div>
-  
+</div>

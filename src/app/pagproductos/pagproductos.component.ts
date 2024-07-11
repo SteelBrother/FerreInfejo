@@ -2,8 +2,10 @@ import { Component, OnInit, Renderer2, Inject, PLATFORM_ID } from '@angular/core
 import { isPlatformBrowser } from '@angular/common';
 import { ProductService } from '../services/product.service';
 import { Product } from '../models/product.model';
+import { Marca } from '../models/marca.model';
 import { Category } from '../models/category.model';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-pagproductos',
@@ -13,6 +15,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class PagproductosComponent implements OnInit {
   categories: Category[] = [];
   products: Product[] = [];
+  marcas: Marca[] = [];
   filteredProducts: Product[] = [];
   pageSize = 12; // Número de productos por página
   currentPage = 1; // Página actual
@@ -23,6 +26,7 @@ export class PagproductosComponent implements OnInit {
 
   constructor(
     private renderer: Renderer2,
+    private location: Location,
     @Inject(PLATFORM_ID) private platformId: Object,
     private productService: ProductService,
     private router: Router,
@@ -37,6 +41,7 @@ export class PagproductosComponent implements OnInit {
 
     this.products = this.productService.getProducts();
     this.categories = this.productService.getAllCategories();
+    this.marcas = this.productService.getMarcas();
     this.totalPages = Math.ceil(this.products.length / this.pageSize);
     this.updateFilteredProducts();
 
@@ -66,7 +71,8 @@ export class PagproductosComponent implements OnInit {
         product.name.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
         product.ref.toLowerCase().includes(this.searchTerm.toLowerCase())
       ) &&
-      (this.selectedCategory ? product.category === this.selectedCategory : true)
+      (this.selectedCategory ? product.category === this.selectedCategory : true) &&
+      (this.selectedMarca ? product.marca === this.selectedMarca : true) 
     );
     this.filteredProducts = filtered;
 
@@ -74,6 +80,10 @@ export class PagproductosComponent implements OnInit {
     const startIndex = (this.currentPage - 1) * this.pageSize;
     const endIndex = startIndex + this.pageSize;
     this.filteredProducts = filtered.slice(startIndex, endIndex);
+  }
+
+  goBack() {
+    this.location.back();
   }
 
   onSearch() {

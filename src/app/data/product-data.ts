@@ -1570,14 +1570,14 @@ new Producto(
     92,                                     // id
     '20604',                                // ref
     'Caja para herramienta',                // name
-    'Cajas para herramienta, con compartimentos, PretuL', // description
+    'Cajas para herramienta, con compartimentos, Pretul', // description
     'Fabricada en polipropileno - Broche plástico - Compartimentos laterales en la tapa para almacenar piezas pequeñas sin necesidad de abrir la caja - Manija con diseño ergonómico para transportar cómodamente', // ficha tecnica
     34000,                                  // precio
     '0',                         // precio al publico (siempre va en 0)
     34000,                                  // precio si tiene descuento 
     0,                                      // el constructor siempre lo calcula, dejar en 0
     'Herramientas',                         // category
-    'PretuL',                               // marca
+    'Pretul',                               // marca
     'assets/imagenes/CHP-19CP.jpg',        // img
     'assets/imagenes/CHP-19CP.jpg',        // img1
     false,                                  // descuento
@@ -1587,14 +1587,14 @@ new Producto(
     93,                                     // id
     '20603',                                // ref
     'Caja para herramienta',                // name
-    'Cajas para herramienta, con compartimentos, PretuL', // description
+    'Cajas para herramienta, con compartimentos, Pretul', // description
     'Fabricada en polipropileno - Broche plástico - Compartimentos laterales en la tapa para almacenar piezas pequeñas sin necesidad de abrir la caja - Manija con diseño ergonómico para transportar cómodamente', // ficha tecnica
     25000,                                  // precio
     '0',                         // precio al publico (siempre va en 0)
     25000,                                  // precio si tiene descuento 
     0,                                      // el constructor siempre lo calcula, dejar en 0
     'Herramientas',                         // category
-    'PretuL',                               // marca
+    'Pretul',                               // marca
     'assets/imagenes/CHP-16CP.jpg',        // img
     'assets/imagenes/CHP-16CP.jpg',        // img1
     false,                                  // descuento
@@ -1604,14 +1604,14 @@ new Producto(
     94,                                     // id
     '20602',                                // ref
     'Caja para herramienta',                // name
-    'Cajas para herramienta, con compartimentos, PretuL', // description
+    'Cajas para herramienta, con compartimentos, Pretul', // description
     'Fabricada en polipropileno - Broche plástico - Compartimentos laterales en la tapa para almacenar piezas pequeñas sin necesidad de abrir la caja - Manija con diseño ergonómico para transportar cómodamente', // ficha tecnica
     15000,                                  // precio
     '0',                         // precio al publico (siempre va en 0)
     15000,                                  // precio si tiene descuento 
     0,                                      // el constructor siempre lo calcula, dejar en 0
     'Herramientas',                         // category
-    'PretuL',                               // marca
+    'Pretul',                               // marca
     'assets/imagenes/CHP-13CP.jpg',        // img
     'assets/imagenes/CHP-13CP.jpg',        // img1
     false,                                  // descuento

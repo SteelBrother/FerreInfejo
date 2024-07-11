@@ -2,7 +2,11 @@
   <div class="sidebar">
   </div>
   <div class="app-content">
-
+    <div class="back-button-container">
+      <button (click)="goBack()" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+      </button>
+  </div>
     <div class="app-content-actions">
       <div class="search-container">
         <select [(ngModel)]="selectedCategory" (change)="onSearch()" class="search-select">
@@ -11,10 +15,11 @@
             {{ category.nombre }}
           </option>
         </select>
-        <select  [(ngModel)]="selectedMarca" (change)="onSearch()" class="search-select">
+        <select [(ngModel)]="selectedMarca" (change)="onSearch()" class="search-select">
           <option value="">Todas las marcas</option>
-          <option value="truper">bothupperjua</option>
-          <option value="truperjj">thupper</option>
+          <option *ngFor="let marca of marcas" [value]="marca.nombre">
+            {{ marca.nombre }}
+          </option>
         </select>
         <input type="text" placeholder="Busca productos por nombre o referencia" [(ngModel)]="searchTerm" (input)="onSearch()" class="search-input" />
       </div>
