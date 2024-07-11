@@ -23,6 +23,8 @@ export class PagproductosComponent implements OnInit {
   searchTerm: string = ''; // Término de búsqueda
   selectedCategory: string = ''; // Categoría seleccionada
   selectedMarca: string = ''; // Marca seleccionada
+  nombre: string | null = null;
+  marca: string | null = null;
 
   constructor(
     private renderer: Renderer2,
@@ -34,9 +36,22 @@ export class PagproductosComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      this.selectedCategory = params['nombre'] || '';
-      this.updateFilteredProducts();
+   
+    this.route.paramMap.subscribe(params => {
+      this.nombre = params.get('nombre');
+      this.marca = params.get('marca');
+      
+      // Realiza la lógica necesaria para manejar los productos filtrados
+      if (this.nombre) {
+        console.log(this.nombre);
+        this.selectedCategory = this.nombre
+        this.updateFilteredProducts();
+      }
+      if (this.marca) {
+        console.log(this.marca);
+        this.selectedMarca = this.marca
+        this.updateFilteredProducts();
+      }
     });
 
     this.products = this.productService.getProducts();
@@ -59,12 +74,6 @@ export class PagproductosComponent implements OnInit {
     this.renderer.appendChild(document.body, script);
   }
 
-  // updateFilteredProducts() {
-  //   const filtered = this.products.filter(product =>
-  //     (product.name.toLowerCase().includes(this.searchTerm.toLowerCase()) || product.ref.toLowerCase().includes(this.searchTerm.toLowerCase())) &&
-  //     (this.selectedCategory ? product.category === this.selectedCategory : true) &&
-  //     (this.selectedMarca ? product.marca === this.selectedMarca : true)
-  //   );
   updateFilteredProducts() {
     const filtered = this.products.filter(product =>
       (
@@ -74,9 +83,11 @@ export class PagproductosComponent implements OnInit {
       (this.selectedCategory ? product.category === this.selectedCategory : true) &&
       (this.selectedMarca ? product.marca === this.selectedMarca : true) 
     );
+    
     this.filteredProducts = filtered;
-
+    
     this.totalPages = Math.ceil(filtered.length / this.pageSize);
+    
     const startIndex = (this.currentPage - 1) * this.pageSize;
     const endIndex = startIndex + this.pageSize;
     this.filteredProducts = filtered.slice(startIndex, endIndex);
@@ -112,9 +123,6 @@ export class PagproductosComponent implements OnInit {
     }
   }
 
-  // viewProduct(productId: number) {
-  //   this.router.navigate(['/product', productId]);
-  // }
   viewProduct(productId: number, productName: string) {
     this.router.navigate(['/product', productName], { queryParams: { id: productId } });
   }

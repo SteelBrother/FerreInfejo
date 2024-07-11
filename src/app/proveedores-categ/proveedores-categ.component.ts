@@ -36,8 +36,7 @@ export class ProveedoresCategComponent implements OnInit {
   }
 
   navigateToCategoria(nombre: string) {
-    console.log(nombre);
     // this.router.navigate(['/listadoproductos'], { queryParams: { categoria: nombre } });
-    this.router.navigate(['/listadoproductos', nombre]);
+    this.router.navigate(['/listadoproductos/category', nombre]);
   }
 }
