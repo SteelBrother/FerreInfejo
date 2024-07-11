@@ -20,7 +20,7 @@ export class ProveedoresCategComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.categories = this.productService.getAllCategories();
+    this.categories = this.productService.getFourCategories();
     if (isPlatformBrowser(this.platformId)) {
       //  this.loadScript();
     }
