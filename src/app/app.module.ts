@@ -26,10 +26,12 @@ import { NavresponsiveComponent } from './navresponsive/navresponsive.component'
 import { PagproductosComponent } from './pagproductos/pagproductos.component';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
 import { Quienessomosv2Component } from './quienessomosv2/quienessomosv2.component';
+import { PoliticasprivacidadComponent } from './politicasprivacidad/politicasprivacidad.component';
+import { PoliticasdevolucionComponent } from './politicasdevolucion/politicasdevolucion.component';
 @NgModule({
   declarations: [
     AppComponent,    
-    ListaProductosComponent, MenuHeaderComponent, ProductoComponent, NavComponent, OtrosProductosComponent, ProductosDestacadosComponent, ProveedoresCategComponent, BtnwaComponent, FooterComponent, ContactoComponent, ProductListComponent, ProductDetailComponent, InicioComponent, ProductosdescuentoComponent, HeaderComponent, ContactImgComponent, FormasPagoComponent, NavresponsiveComponent, PagproductosComponent, QuienessomosComponent, Quienessomosv2Component
+    ListaProductosComponent, MenuHeaderComponent, ProductoComponent, NavComponent, OtrosProductosComponent, ProductosDestacadosComponent, ProveedoresCategComponent, BtnwaComponent, FooterComponent, ContactoComponent, ProductListComponent, ProductDetailComponent, InicioComponent, ProductosdescuentoComponent, HeaderComponent, ContactImgComponent, FormasPagoComponent, NavresponsiveComponent, PagproductosComponent, QuienessomosComponent, Quienessomosv2Component, PoliticasprivacidadComponent, PoliticasdevolucionComponent
   ],
   imports: [
     BrowserModule,
