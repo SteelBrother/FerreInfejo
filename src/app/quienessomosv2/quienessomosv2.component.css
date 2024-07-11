@@ -73,6 +73,9 @@
   }
 
   @media (max-width: 768px) {
+    .contimgx2{
+        display: none;
+    }
     .textosquien h6{
         font-size: 18px;
         font-weight: 700;

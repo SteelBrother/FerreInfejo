@@ -2155,6 +2155,387 @@ new Producto(
   false            // destacado
 ),
 
+ 
+new Producto(
+  126,              // id
+  'BC-750',         // ref
+  'Limpiador de Frenos',  // name
+  'Limpiador de Frenos y piezas de freno',  // description
+  'Fórmula sin cloro, limpia y desengrasa de forma segura frenos, juntas homocinéticas y componentes de embrague sin desmontar. Se seca rápido y no deja residuos.', // ficha tecnica
+  19797,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  19797,            // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/BC-750-Brake-cleaner.jpg', // img
+  'assets/imagenes/BC-750-Brake-cleaner.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  127,              // id
+  'GS-10A',         // ref
+  'Junta de Culata',  // name
+  'Junta de Culata Eagle® Shellac',  // description
+  'Sellador con brocha para juntas de papel, cartón y fieltro. Secado rápido, fraguado duro. Resiste la mayoría de los productos derivados del petróleo y fluidos de taller.', // ficha tecnica
+  4797,             // precio
+  '0',              // precio al publico (siempre va en '0')
+  4797,             // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/GS-10A-EAGLE-HEAD-GASKET-SHELLAC.jpg', // img
+  'assets/imagenes/GS-10A-EAGLE-HEAD-GASKET-SHELLAC.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  128,              // id
+  'AB-80-210',      // ref
+  'Lubricante en Aerosol',  // name
+  'Lubricante en Aerosol AB-80 210ml',  // description
+  'Penetra hasta “reventar” piezas congeladas por el óxido y la corrosión. Lubrica bisagras, cerraduras, ruedas giratorias y más. Previene el óxido y la corrosión depositando una película ultrafina que recubre y penetra los poros de la superficie del metal. Protege contra el óxido y la corrosión: lubrica las piezas móviles y desplaza la humedad para secar las piezas eléctricas. El práctico tubo de snorkel llega a zonas de difícil acceso.', // ficha tecnica
+  6801,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  6801,             // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/AB-80-210.jpg', // img
+  'assets/imagenes/AB-80-210.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  129,              // id
+  'AB-80-400',      // ref
+  'Lubricante en Aerosol',  // name
+  'Lubricante en Aerosol AB-80 400ml',  // description
+  'Penetra hasta “reventar” piezas congeladas por el óxido y la corrosión. Lubrica bisagras, cerraduras, ruedas giratorias y más. Previene el óxido y la corrosión depositando una película ultrafina que recubre y penetra los poros de la superficie del metal. Protege contra el óxido y la corrosión: lubrica las piezas móviles y desplaza la humedad para secar las piezas eléctricas. El práctico tubo de snorkel llega a zonas de difícil acceso.', // ficha tecnica
+  9894,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  9894,             // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/AB-80-400.jpg', // img
+  'assets/imagenes/AB-80-400.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  130,              // id
+  'CC-200',         // ref
+  'Limpiador de Carbohidratos',  // name
+  'Limpiador de Carbohidratos y Estranguladores',  // description
+  'Libera los estranguladores manuales o automáticos que se atascan. Disuelve los depósitos dañinos en el sistema de combustible. Elimina los arranques difíciles, el ralentí brusco y el estancamiento.', // ficha tecnica
+  9540,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  9540,             // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/CC-200-Carb-Choke-Cleaner.jpg', // img
+  'assets/imagenes/CC-200-Carb-Choke-Cleaner.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+
+new Producto(
+  131,              // id
+  'SF-650',         // ref
+  'Líquido de Arranque',  // name
+  'Líquido de Arranque',  // description
+  'Garantiza arranques más rápidos y fáciles en climas fríos. Minimiza el desgaste de las baterías. Adecuado para motores de 2 o 4 tiempos.', // ficha tecnica
+  15458,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  15458,            // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/SF-650-CH-WH.jpg', // img
+  'assets/imagenes/SF-650-CH-WH.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  132,              // id
+  'EC-533',         // ref
+  'Limpiador de Contactos Electrónicos',  // name
+  'Limpiador de Contactos Electrónicos 5,75 onzas/163g',  // description
+  'Limpia aceite, grasa, suciedad, condensación y humedad de placas de circuitos, contactos eléctricos, interruptores, instrumentos de precisión y más.', // ficha tecnica
+  10182,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  10182,            // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/EC-533.jpg', // img
+  'assets/imagenes/EC-533.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  133,              // id
+  'EC-833',         // ref
+  'Limpiador de Contactos Electrónicos',  // name
+  'Limpiador de Contactos Electrónicos 10 onzas/283g',  // description
+  'Limpia aceite, grasa, suciedad, condensación y humedad de placas de circuitos, contactos eléctricos, interruptores, instrumentos de precisión y más.', // ficha tecnica
+  10182,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  10182,            // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/EC-833.jpg', // img
+  'assets/imagenes/EC-833.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  134,              // id
+  'TB-300',         // ref
+  'Limpiador Cuerpo de Aceleración',  // name
+  'Limpiador Cuerpo de Aceleración',  // description
+  'Seguro para sensores de oxígeno y convertidores catalíticos. Limpia sin necesidad de desmontar. Rápida evaporación. No daña empaques.', // ficha tecnica
+  8640,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  8640,             // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/TB-300.jpg', // img
+  'assets/imagenes/TB-300.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  135,              // id
+  'SL-909',         // ref
+  'Silicona Lubricante En Spray',  // name
+  'Silicona Lubricante En Spray',  // description
+  'Lubricante de alta calidad que penetra rápidamente en áreas de difícil acceso. Desplaza la humedad. Excelentes propiedades antiadherentes, lo cual lo convierte en un producto ideal para desmoldar. Genera una capa protectora contra la corrosión. No se quema ni se carboniza, debido a su estabilidad a altas temperaturas. Posee propiedades aislantes y antiestáticas.', // ficha tecnica
+  11128,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  11128,            // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Lubricantes',    // category
+  'ABRO',           // marca
+  'assets/imagenes/SL-909.jpg', // img
+  'assets/imagenes/SL-909.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  136,              // id
+  'C-890',          // ref
+  'Cinta Adhesiva Señalización Amarilla',  // name
+  'Cinta Adhesiva Señalización Amarilla',  // description
+  'Fuerza de adhesión superior. Resistente al desprendimiento. Resistente al rasgado. Alta resistencia al tránsito o tráfico de objetos. Larga vida.', // ficha tecnica
+  9470,            // precio
+  '0',              // precio al publico (siempre va en '0')
+  9470,             // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Adhesivos',      // category
+  'Cellux',         // marca
+  'assets/imagenes/C-890-SENALIZACION-AMARILLA.jpg', // img
+  'assets/imagenes/C-890-SENALIZACION-AMARILLA.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  137,              // id
+  'C-700',          // ref
+  'Cinta De Empaque Liviano',  // name
+  'Cinta De Empaque Liviano',  // description
+  'Alta resistencia al desgarro y a la rotura de los bordes. Precinto de seguridad. Sellado de cajas manual o automático.', // ficha tecnica
+  842,             // precio
+  '0',              // precio al publico (siempre va en '0')
+  842,              // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Adhesivos',      // category
+  'Cellux',         // marca
+  'assets/imagenes/C-700-1.jpg', // img
+  'assets/imagenes/C-700-1.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  138,              // id
+  'C-563',          // ref
+  'Cinta De Enmascarar Multiusos',  // name
+  'Cinta De Enmascarar Multiusos',  // description
+  'Es flexible. Fácil de quitar. Puedes escribir en él. Fácil de cortar.', // ficha tecnica
+  732,             // precio
+  '0',              // precio al publico (siempre va en '0')
+  732,              // precio si tiene descuento (40% de descuento)
+  0,              // el constructor siempre lo calcula, dejar en '0'
+  'Adhesivos',      // category
+  'Cellux',         // marca
+  'assets/imagenes/C-563.jpg', // img
+  'assets/imagenes/C-563.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+new Producto(
+  139,              // id
+  'BG3515C',        // ref
+  'Guantes Blue',   // name
+  'Guantes Blue',   // description
+  'Refuerzo en palma, pulgar y nudillos, cosido en fibra de aramida, retardante al fuego, con dulceabrigo. 16"', // ficha tecnica
+  26080,            // precio
+  '0',              // precio al publico (siempre va en 0)
+  26080,            // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Seguridad',      // category
+  'Snow',           // marca
+  'assets/imagenes/BG3515C.jpg', // img
+  'assets/imagenes/BG3515C.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  140,              // id
+  'BG3515G',        // ref
+  'Guantes Gold Small', // name
+  'Guantes Gold Small', // description
+  'Refuerzo en palma, cosido en fibra de aramida, retardante al fuego, y matachispas, con dulceabrigo. 14"', // ficha tecnica
+  18820,            // precio
+  '0',              // precio al publico (siempre va en 0)
+  18820,            // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Seguridad',      // category
+  'Snow',           // marca
+  'assets/imagenes/BG3515G.jpg', // img
+  'assets/imagenes/BG3515G.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  141,              // id
+  'BH104-S',        // ref
+  'Casco Eco Cup',  // name
+  'Casco Eco Cup Blanco', // description
+  'Casco económico en polietileno, tafilete sencillo, color blanco.', // ficha tecnica
+  9410,             // precio
+  '0',              // precio al publico (siempre va en 0)
+  9410,             // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Seguridad',      // category
+  'Snow',           // marca
+  'assets/imagenes/BH104-S.jpg', // img
+  'assets/imagenes/BH104-S.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  142,              // id
+  'BH106',          // ref
+  'Casco Coverd',   // name
+  'Casco Coverd Amarillo', // description
+  'Con orificios para una mejor ventilación, con canaleta, arnés de 4 puntos de protección media. sin barbuquejo.', // ficha tecnica
+  10090,            // precio
+  '0',              // precio al publico (siempre va en 0)
+  10090,            // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Seguridad',      // category
+  'Snow',           // marca
+  'assets/imagenes/BH106.jpg', // img
+  'assets/imagenes/BH106.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  143,              // id
+  'BEO',            // ref
+  'Protector auditivo Bullet',  // name
+  'Protector auditivo Bullet',  // description
+  'Protector auditivo de inserción con poliuretano color naranja.', // ficha tecnica
+  420,              // precio
+  '0',              // precio al publico (siempre va en 0)
+  420,              // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Seguridad',      // category
+  'Snow',           // marca
+  'assets/imagenes/BEO.jpg', // img
+  'assets/imagenes/BEO.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  144,              // id
+  'BYB010',         // ref
+  'Arnés Top Red',  // name
+  'Arnés Top Red',  // description
+  'Arnés multipropósito de seguridad anticaídas, pélvico-pectoral con 4 argollas cruzada.', // ficha tecnica
+  67060,            // precio
+  '0',              // precio al publico (siempre va en 0)
+  67060,            // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Seguridad',      // category
+  'Snow',           // marca
+  'assets/imagenes/BYB010.jpg', // img
+  'assets/imagenes/BYB010.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  145,              // id
+  'BYB027',         // ref
+  'Eslinga de posicionamiento', // name
+  'Eslinga de posicionamiento', // description
+  'Eslinga de posicionamiento.', // ficha tecnica
+  61180,            // precio
+  '0',              // precio al publico (siempre va en 0)
+  61180,            // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Seguridad',      // category
+  'Snow',           // marca
+  'assets/imagenes/BYB027.jpg', // img
+  'assets/imagenes/BYB027.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  146,              // id
+  'BYB022',         // ref
+  'Punto de anclaje movil', // name
+  'Punto de anclaje movil', // description
+  'Punto de anclaje movil.', // ficha tecnica
+  28240,            // precio
+  '0',              // precio al publico (siempre va en 0)
+  28240,            // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Seguridad',      // category
+  'Snow',           // marca
+  'assets/imagenes/BYB022.jpg', // img
+  'assets/imagenes/BYB022.jpg', // img1
+  false,            // descuento
+  false             // destacado
+)
+
+
+
   // Continuar con más productos si es necesario
 ];
 
