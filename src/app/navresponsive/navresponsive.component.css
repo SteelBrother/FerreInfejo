@@ -165,22 +165,33 @@ a {
   transition: transform 0.4s;
 }
 
+.dropdown__link a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
 .dropdown__link, 
 .dropdown__sublink {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
   color: #fff;
-  background-color: hsl(220, 24%, 15%);
+  background-color: hsl(40, 24%, 15%);
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
   font-weight: 600;
   transition: background-color 0.3s;
+  text-decoration: none;
+  
 }
+
 
 .dropdown__link i, 
 .dropdown__sublink i {
   font-size: 1.25rem;
   font-weight: initial;
+  text-decoration: none;
+  color: #fff;
 }
 
 .dropdown__link:hover, 
