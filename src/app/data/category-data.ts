@@ -56,5 +56,12 @@ export const CATEGORIES: ICategory[] = [
     'assets/imagenes/catdes_2i_b.jpg',
     'ar-card-4',
      'Lubricantes'
+  ),
+  new Category(
+    9,
+    'Sellos',
+    'assets/imagenes/catdes_2i_b.jpg',
+    'ar-card-4',
+     'Sellos Mecánicos'
   )
 ]

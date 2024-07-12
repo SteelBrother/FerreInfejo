@@ -2532,7 +2532,61 @@ new Producto(
   'assets/imagenes/BYB022.jpg', // img1
   false,            // descuento
   false             // destacado
+),
+new Producto(
+  148,              // id
+  'MMI-2C45',       // ref
+  'Mangaveleta',    // name
+  'Mangaveleta con estructura metálica', // description
+  'Mástil metálico de la mangaveleta fabricado con tubo acero al carbono calibre 0.90. PRESENTACION ALTURA MASTIL: 1.25 MTS. 2MTS Y 4 MTS. Dimensión: 2mts de longitud, boca ancha de 45cms boca angosta de 24 cms.', // ficha tecnica
+  9999,             // precio
+  '0',              // precio al publico (siempre va en 0)
+  9999,             // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Adhesivos',      // category
+  'Snow',           // marca
+  'assets/imagenes/MMI-2X45.jpg', // img
+  'assets/imagenes/MMI-2X45.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  149,              // id
+  'VNP-15',         // ref
+  'Vinipel',        // name
+  'Rollo de vinipel x15cm de ancho color transparente o Negro', // description
+  'Rollo vinipel 15cm x 500mts - material termoplástico con propiedades de elongación y retención en movimiento y transportes.', // ficha tecnica
+  16500,            // precio
+  '0',              // precio al publico (siempre va en 0)
+  16500,            // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Adhesivos',      // category
+  'Snow',           // marca
+  'assets/imagenes/VNP-15.jpg', // img
+  'assets/imagenes/VNP-15.jpg', // img1
+  false,            // descuento
+  false             // destacado
+),
+
+new Producto(
+  150,              // id
+  'VNP-30',         // ref
+  'Vinipel',        // name
+  'Rollo de vinipel x30cm de ancho color transparente o Negro', // description
+  'Rollo vinipel 30cm x 500mts - material termoplástico con propiedades de elongación y retención en movimiento y transportes.', // ficha tecnica
+  20500,            // precio
+  '0',              // precio al publico (siempre va en 0)
+  20500,            // precio si tiene descuento (sin descuento)
+  0,                // el constructor siempre lo calcula, dejar en 0
+  'Adhesivos',      // category
+  'Snow',           // marca
+  'assets/imagenes/VNP-30.jpg', // img
+  'assets/imagenes/VNP-30.jpg', // img1
+  false,            // descuento
+  false             // destacado
 )
+
 
 
 
