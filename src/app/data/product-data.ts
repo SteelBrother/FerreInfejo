@@ -15,8 +15,8 @@ export const PRODUCTS: Product[] = [
     'Truper',      // marca
     'assets/imagenes/KIT-5P.jpg', //img
    'assets/imagenes/KIT-5P.jpg', //img1
-    true,           // descuento
-    true           // destacado
+    false,           // descuento
+    false           // destacado
   ),
     new Producto(
     2,              // id
@@ -32,8 +32,8 @@ export const PRODUCTS: Product[] = [
     'Pretul',      // marca
     'assets/imagenes/KITB-5X.jpg', //img
    'assets/imagenes/KITB-5X.jpg', //img1
-   true,           // descuento
-   true           // destacado
+   false,           // descuento
+   false           // destacado
   ),
     new Producto(
     3,              // id
@@ -49,8 +49,8 @@ export const PRODUCTS: Product[] = [
     'Truper',      // marca
     'assets/imagenes/SBI-18.jpg', //img
    'assets/imagenes/SBI-18.jpg', //img1
-   true,           // descuento
-   true           // destacado
+   false,           // descuento
+   false           // destacado
   ),
     new Producto(
     4,              // id
@@ -66,8 +66,8 @@ export const PRODUCTS: Product[] = [
     'Pretul',      // marca
     'assets/imagenes/RE-10P.jpg', //img
    'assets/imagenes/RE-10P.jpg', //img1
-   true,           // descuento
-   true           // destacado
+   false,           // descuento
+   false          // destacado
   ),
   new Producto(
     5,              // id
@@ -390,7 +390,7 @@ export const PRODUCTS: Product[] = [
     'assets/imagenes/BRE-2.jpg', //img
    'assets/imagenes/BRE-2.jpg', //img1
     false,           // descuento
-    false           // destacado
+    true           // destacado
   ),
     new Producto(
     24,              // id
@@ -1428,7 +1428,7 @@ new Producto(
     'assets/imagenes/JCE-3P.jpg',     // img
     'assets/imagenes/JCE-3P.jpg',     // img1
     false,                             // descuento
-    false                              // destacado
+    true                              // destacado
 ),
 new Producto(
     84,                                // id
@@ -1914,13 +1914,13 @@ new Producto(
     'Fabricadas en acero al carbono - Mangos cubiertos de PVC', // ficha tecnica
     32000,                                  // precio
     '0',                         // precio al publico (siempre va en 0)
-    32000,                                  // precio si tiene descuento 
+    19200,                                  // precio si tiene descuento 
     0,                                      // el constructor siempre lo calcula, dejar en 0
     'Herramientas',                         // category
     'Pretul',                               // marca
     'assets/imagenes/JGO-PIN-3B.jpg',       // img
     'assets/imagenes/JGO-PIN-3B.jpg',       // img1
-    false,                                  // descuento
+    true,                                  // descuento
     false                                   // destacado
 ),
 new Producto(
@@ -2334,7 +2334,7 @@ new Producto(
   'assets/imagenes/SL-909.jpg', // img
   'assets/imagenes/SL-909.jpg', // img1
   false,            // descuento
-  false             // destacado
+  true             // destacado
 ),
 
 new Producto(
@@ -2363,13 +2363,13 @@ new Producto(
   'Alta resistencia al desgarro y a la rotura de los bordes. Precinto de seguridad. Sellado de cajas manual o automático.', // ficha tecnica
   842,             // precio
   '0',              // precio al publico (siempre va en '0')
-  842,              // precio si tiene descuento (40% de descuento)
+  542,              // precio si tiene descuento (40% de descuento)
   0,              // el constructor siempre lo calcula, dejar en '0'
   'Adhesivos',      // category
   'Cellux',         // marca
   'assets/imagenes/C-700-1.jpg', // img
   'assets/imagenes/C-700-1.jpg', // img1
-  false,            // descuento
+  true,            // descuento
   false             // destacado
 ),
 
@@ -2543,12 +2543,12 @@ new Producto(
   '0',              // precio al publico (siempre va en 0)
   9999,             // precio si tiene descuento (sin descuento)
   0,                // el constructor siempre lo calcula, dejar en 0
-  'Adhesivos',      // category
+  'Seguridad',      // category
   'Snow',           // marca
-  'assets/imagenes/MMI-2X45.jpg', // img
+  'assets/imagenes/MMI-245.jpg', // img
   'assets/imagenes/MMI-2X45.jpg', // img1
   false,            // descuento
-  false             // destacado
+  true             // destacado
 ),
 
 new Producto(
@@ -2559,13 +2559,13 @@ new Producto(
   'Rollo vinipel 15cm x 500mts - material termoplástico con propiedades de elongación y retención en movimiento y transportes.', // ficha tecnica
   16500,            // precio
   '0',              // precio al publico (siempre va en 0)
-  16500,            // precio si tiene descuento (sin descuento)
+  9900,            // precio si tiene descuento (sin descuento)
   0,                // el constructor siempre lo calcula, dejar en 0
   'Adhesivos',      // category
   'Snow',           // marca
   'assets/imagenes/VNP-15.jpg', // img
   'assets/imagenes/VNP-15.jpg', // img1
-  false,            // descuento
+  true,            // descuento
   false             // destacado
 ),
 
@@ -2577,13 +2577,13 @@ new Producto(
   'Rollo vinipel 30cm x 500mts - material termoplástico con propiedades de elongación y retención en movimiento y transportes.', // ficha tecnica
   20500,            // precio
   '0',              // precio al publico (siempre va en 0)
-  20500,            // precio si tiene descuento (sin descuento)
+  12300,            // precio si tiene descuento (sin descuento)
   0,                // el constructor siempre lo calcula, dejar en 0
   'Adhesivos',      // category
   'Snow',           // marca
   'assets/imagenes/VNP-30.jpg', // img
   'assets/imagenes/VNP-30.jpg', // img1
-  false,            // descuento
+  true,            // descuento
   false             // destacado
 )
 
