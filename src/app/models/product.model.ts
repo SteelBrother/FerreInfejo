@@ -55,14 +55,18 @@ export class Producto implements Product {
   }
   
   calcularPorcentajeDescuento(): number {
-    if (this.price !== 0 && this.pricedesc < this.price) {
-      const descuento = this.price - this.pricedesc;
-      const porcentajeDescuento = (descuento / this.price) * 100;
+    const pricedescConIncremento = this.pricedesc * 1.4;
+    const priceConIncremento = this.price * 1.4;
+  
+    if (priceConIncremento !== 0 && pricedescConIncremento < priceConIncremento) {
+      const descuento = priceConIncremento - pricedescConIncremento;
+      const porcentajeDescuento = (descuento / priceConIncremento) * 100;
       return Math.round(porcentajeDescuento);
     } else {
       return 0;
     }
   }
+  
 
   calcularPrecioPublico(): string {
     if (this.price !== 0) {
