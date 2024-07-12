@@ -2545,7 +2545,7 @@ new Producto(
   0,                // el constructor siempre lo calcula, dejar en 0
   'Seguridad',      // category
   'Snow',           // marca
-  'assets/imagenes/MMI-2x45.jpg', // img
+  'assets/imagenes/MMI-2X45.jpg', // img
   'assets/imagenes/MMI-2X45.jpg', // img1
   false,            // descuento
   true             // destacado
