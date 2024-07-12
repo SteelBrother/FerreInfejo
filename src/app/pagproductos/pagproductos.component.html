@@ -33,6 +33,11 @@
         </button>
       </div>
     </div>
+
+    <!-- Contador de productos -->
+    <div class="product-count">
+      Total de productos: {{ products.length }}, Productos en página : {{filteredProducts.length}}
+    </div>
      <div *ngIf="filteredProducts.length != 0">
       <div class="paginator">
         <button (click)="prevPage()" [disabled]="currentPage === 1">Anterior</button>
