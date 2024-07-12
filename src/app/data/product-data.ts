@@ -1141,7 +1141,7 @@ export const PRODUCTS: Product[] = [
     false           // destacado
   ),
   new Producto(
-    67,              // id
+    147,              // id
     '16845',         // ref
     'Polipasto eléctrico de 400 kg',    // name
     'Polipasto eléctrico de 400 kg, Truper',  // description
