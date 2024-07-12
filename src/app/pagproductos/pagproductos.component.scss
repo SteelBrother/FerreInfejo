@@ -1015,9 +1015,20 @@ body {
     flex: 1 1 80%; /* Ocupa el 80% en pantallas más pequeñas */
     font-size: 14px; /* Reducir tamaño de la fuente en pantallas más pequeñas */
   }
+  .product-count {
+    font-size: 0.75rem;
+  }
+
+&-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 14px;
+} 
+  .app-content-actions-wrapper{
+    padding-bottom: 120px;
+  }
 }
-
-
 @media (max-width: 768px) {
   .listView .products-header {
     display: flex;

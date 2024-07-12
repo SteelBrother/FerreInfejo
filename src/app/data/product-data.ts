@@ -1912,9 +1912,9 @@ new Producto(
     'Juego de 3 pinzas, 2 de 6" y 1 de 8"', // name
     'Juego de 3 pinzas, 2 de 6" y 1 de 8", mangos de PVC, Pretul', // description
     'Fabricadas en acero al carbono - Mangos cubiertos de PVC', // ficha tecnica
-    32000,                                  // precio
+    45000,                                  // precio
     '0',                         // precio al publico (siempre va en 0)
-    19200,                                  // precio si tiene descuento 
+    32000,                                  // precio si tiene descuento 
     0,                                      // el constructor siempre lo calcula, dejar en 0
     'Herramientas',                         // category
     'Pretul',                               // marca
@@ -2361,9 +2361,9 @@ new Producto(
   'Cinta De Empaque Liviano',  // name
   'Cinta De Empaque Liviano',  // description
   'Alta resistencia al desgarro y a la rotura de los bordes. Precinto de seguridad. Sellado de cajas manual o automático.', // ficha tecnica
-  842,             // precio
+  2500,             // precio
   '0',              // precio al publico (siempre va en '0')
-  542,              // precio si tiene descuento (40% de descuento)
+  1404,              // precio si tiene descuento (40% de descuento)
   0,              // el constructor siempre lo calcula, dejar en '0'
   'Adhesivos',      // category
   'Cellux',         // marca
@@ -2402,8 +2402,8 @@ new Producto(
   0,                // el constructor siempre lo , dejar en 0
   'Seguridad',      // category
   'Snow',           // marca
-  'assets/imagenes/BG3515C.jpg', // img
-  'assets/imagenes/BG3515C.jpg', // img1
+  'assets/imagenes/BG3515C_.jpg', // img
+  'assets/imagenes/BG3515C_.jpg', // img1
   false,            // descuento
   false             // destacado
 ),
@@ -2539,9 +2539,9 @@ new Producto(
   'Mangaveleta',    // name
   'Mangaveleta con estructura metálica', // description
   'Mástil metálico de la mangaveleta fabricado con tubo acero al carbono calibre 0.90. PRESENTACION ALTURA MASTIL: 1.25 MTS. 2MTS Y 4 MTS. Dimensión: 2mts de longitud, boca ancha de 45cms boca angosta de 24 cms.', // ficha tecnica
-  238100,             // precio
+  412700,             // precio
   '0',              // precio al publico (siempre va en 0)
-  238100,             // precio si tiene descuento (sin descuento)
+  412700,             // precio si tiene descuento (sin descuento)
   0,                // el constructor siempre lo calcula, dejar en 0
   'Seguridad',      // category
   'Snow',           // marca
@@ -2557,9 +2557,9 @@ new Producto(
   'Vinipel x15',        // name
   'Rollo de vinipel x15cm de ancho color transparente o Negro', // description
   'Rollo vinipel 15cm x 500mts - material termoplástico con propiedades de elongación y retención en movimiento y transportes.', // ficha tecnica
-  16500,            // precio
+  28500,            // precio
   '0',              // precio al publico (siempre va en 0)
-  9900,            // precio si tiene descuento (sin descuento)
+  16500,            // precio si tiene descuento (sin descuento)
   0,                // el constructor siempre lo calcula, dejar en 0
   'Adhesivos',      // category
   'Snow',           // marca
@@ -2575,9 +2575,9 @@ new Producto(
   'Vinipel x30',        // name
   'Rollo de vinipel x30cm de ancho color transparente o Negro', // description
   'Rollo vinipel 30cm x 500mts - material termoplástico con propiedades de elongación y retención en movimiento y transportes.', // ficha tecnica
-  20500,            // precio
+  32000,            // precio
   '0',              // precio al publico (siempre va en 0)
-  12300,            // precio si tiene descuento (sin descuento)
+  20500,            // precio si tiene descuento (sin descuento)
   0,                // el constructor siempre lo calcula, dejar en 0
   'Adhesivos',      // category
   'Snow',           // marca

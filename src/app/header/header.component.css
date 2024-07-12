@@ -265,6 +265,7 @@ ul.bannerSlider {
   .bannerSlider .slide__text h3 {
 	font-size: 1.2em;
 	margin-top: 7%;
+  font-weight: 300;
  }
  .bannerSlider .slide__text h1 {
 	font-size: 1.8em;
