@@ -12,7 +12,7 @@ export const PRODUCTS: Product[] = [
     85000,             // precio si tiene descuento 
     0,             // el constructor siempre lo calcula, dejar en 0
     'Herramientas',   // category
-    'Truper',      // marca
+    'Pretul',      // marca
     'assets/imagenes/KIT-5P.jpg', //img
    'assets/imagenes/KIT-5P.jpg', //img1
     false,           // descuento
@@ -29,7 +29,7 @@ export const PRODUCTS: Product[] = [
     12000,             // precio si tiene descuento 
     0,             // el constructor siempre lo calcula, dejar en 0
     'Herramientas',   // category
-    'Pretul',      // marca
+    'Truper',      // marca
     'assets/imagenes/KITB-5X.jpg', //img
    'assets/imagenes/KITB-5X.jpg', //img1
    false,           // descuento

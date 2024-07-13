@@ -1000,13 +1000,32 @@ body {
   right: 15px;
   pointer-events: none;
 }
+.no-products-message{
+ justify-content: left;
+ margin-top: 40px;
+ padding-bottom: 90px;
+}
 
 /* Estilos responsivos */
+
+@media (max-width: 2000px) {
+  .product-count {
+    font-size: 1rem;
+  }
+.no-products-message{
+  
+}
+}
+
 @media (max-width: 900px) {
   .search-input,
   .search-select {
     flex: 1 1 45%; /* Ocupa el 45% en pantallas medianas */
   }
+  .product-count {
+    font-size: 1rem;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -1030,6 +1049,7 @@ body {
   }
 }
 @media (max-width: 768px) {
+ 
   .listView .products-header {
     display: flex;
     flex-direction: column; /* Mostrar los elementos en columna en dispositivos móviles */

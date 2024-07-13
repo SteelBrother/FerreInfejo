@@ -100,10 +100,20 @@
                 <div class="d-flex justify-content-center align-items-center">
                   <img class="img-fluid product-image" [src]="product.mainimage" alt="{{ product.name }}" />
                 </div>
-                <div class="text-center py-4">
+                <!-- <div class="text-center py-4">
                   <h6 class="product-name">{{ product.name }}</h6>
-                  <h6 class="text-muted font-weight-normal product-price">{{ product.price | currency }}</h6>
-                </div>
+                  <h6 class="text-muted font-weight-normal product-price">{{ product.price }}</h6>
+                </div> -->
+                <div class="text-center py-4" *ngIf="product.descuento; else elseBlock">
+                    <h6 class="product-name">{{ product.name }}</h6>
+                    <h6 class="text-muted font-weight-normal product-price">${{ product.pricedesc }}</h6>
+                </div> 
+                <ng-template #elseBlock>
+                    <div class="text-center py-4">
+                        <h6 class="product-name">{{ product.name }}</h6>
+                        <h6 class="text-muted font-weight-normal product-price">{{ product.pricepublic }}</h6>
+                      </div>
+                </ng-template>
               </div>
         </a>      
       </div>
